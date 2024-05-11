@@ -1,0 +1,17 @@
+{
+    "question": "An object is characterized by the folowing three:",
+    "choices": [
+        {
+            "choice": "name, properties, activities",
+            "correct": "true"
+        },
+        {
+            "choice": "name, owner, possession",
+            "correct": "false"
+        },
+        {
+            "choice": "properties, estates, lands",
+            "correct": "false"
+        }
+    ]
+}

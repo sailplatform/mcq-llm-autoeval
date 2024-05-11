@@ -1,0 +1,17 @@
+{
+    "question": "Justin is a data scientist working at a startup. The company collects a large amount of customer feedback data from different sources including social media comments, customer support emails, and product reviews. This unstructured text data often contains URLs, email addresses, and phone numbers. He wants to extract, clean, and analyze this data to gain meaningful insights.\\n\\nGiven the nature and requirements of his task, which Python library should Justin use to efficiently work with this unstructured text data?",
+    "choices": [
+        {
+            "choice": "Pandas - Pandas is a powerful data manipulation library, great for working with structured data like CSV files, but it does not have built-in capabilities for regular expressions.",
+            "correct": "false"
+        },
+        {
+            "choice": "Matplotlib - Matplotlib is a data visualization library. While it is very powerful for creating graphs and plots, it does not provide functionalities for text manipulation or regular expressions.",
+            "correct": "false"
+        },
+        {
+            "choice": "re - The Python 're' module provides regular expression support. It can be used to search, edit and manipulate text, which might be ideal for Justin's task.",
+            "correct": "true"
+        }
+    ]
+}

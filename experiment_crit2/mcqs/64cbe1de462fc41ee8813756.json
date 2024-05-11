@@ -1,0 +1,17 @@
+{
+    "question": "Fill in the blank: The following Python code snippet iterates over a string 'PythonIsFun' to count the number of 'n' in the string. What statements should replace the blanks to achieve this?\n\n```python\n\nstring = 'PythonIsFun'\ncount = 0\n\nfor ______ in string:\n    if ______ == 'n':\n        count += 1\n\n```",
+    "choices": [
+        {
+            "choice": "\"character, character\"",
+            "correct": "true"
+        },
+        {
+            "choice": "\"i, string[i]\"",
+            "correct": "false"
+        },
+        {
+            "choice": "\"character, character\"",
+            "correct": "false"
+        }
+    ]
+}

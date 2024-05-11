@@ -1,0 +1,4 @@
+Here is a multiple-choice question in JSON format.
+{QUESTION}
+
+Do the question text and it's choices provide enough information or context for a student to answer it correctly?

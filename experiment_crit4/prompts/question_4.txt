@@ -1,0 +1,4 @@
+Here is a multiple-choice question in JSON format.
+{QUESTION}
+
+From the perspective of a student answering this Multiple-choice question, how good are the distractors? There must be no incorrect answers that can easily be eliminated.

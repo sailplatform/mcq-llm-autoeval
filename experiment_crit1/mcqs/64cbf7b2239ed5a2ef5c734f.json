@@ -1,0 +1,17 @@
+{
+    "question": "Consider the following code, what will be the printed output?",
+    "choices": [
+        {
+            "choice": "\\\"20\\\"",
+            "correct": "true"
+        },
+        {
+            "choice": "\\\"10\\\"",
+            "correct": "false"
+        },
+        {
+            "choice": "Error Message",
+            "correct": "false"
+        }
+    ]
+}

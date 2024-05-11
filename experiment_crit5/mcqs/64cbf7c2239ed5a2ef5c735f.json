@@ -1,0 +1,17 @@
+{
+    "question": "What will be the output of the following Python code?\n```python\ndef func1():\n    try:\n        a = int('10')\n        b = int('python')\n    except ValueError:\n        return 'Execution of this block failed due to ValueError.'\nfunc1()\n```",
+    "choices": [
+        {
+            "choice": "Execution of this block failed due to ValueError.",
+            "correct": "true"
+        },
+        {
+            "choice": "10",
+            "correct": "false"
+        },
+        {
+            "choice": "An error outside of ValueError",
+            "correct": "false"
+        }
+    ]
+}

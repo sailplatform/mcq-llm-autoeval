@@ -1,0 +1,21 @@
+{
+    "question": "What is the expected result of executing the following code?\n\n```python\nclass I:\n    def __init__(self):\n        self.s = 'abc'\n        self.i = 0\n\n        def __iter__(self):\n            return self\n\n    def __next__(self):\n    if self.i == len(self.s):\n        raise StopIteration\n    v = self.s[self.i]\n    self.i += 1\n    return v\n\nfor x in I():\n    print(x, end='')\n```",
+    "choices": [
+        {
+            "choice": "The code will print `cba`",
+            "correct": "false"
+        },
+        {
+            "choice": "The code will print `012`",
+            "correct": "false"
+        },
+        {
+            "choice": "The code will print `210`",
+            "correct": "false"
+        },
+        {
+            "choice": "The code will print `abc`",
+            "correct": "true"
+        }
+    ]
+}

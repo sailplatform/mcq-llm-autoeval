@@ -1,0 +1,21 @@
+{
+    "question": "How many stars (*) will the following snippet send to console?\n\n```python\ni = 0\nwhile i < i + 2:\n    i += 1\n    print('*')\nelse:\nprint('*')\n```",
+    "choices": [
+        {
+            "choice": "one",
+            "correct": "false"
+        },
+        {
+            "choice": "zero",
+            "correct": "false"
+        },
+        {
+            "choice": "two",
+            "correct": "false"
+        },
+        {
+            "choice": "the snippet will enter an infinite loop, printing one star per line",
+            "correct": "true"
+        }
+    ]
+}

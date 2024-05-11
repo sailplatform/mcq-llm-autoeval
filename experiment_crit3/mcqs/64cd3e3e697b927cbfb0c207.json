@@ -1,0 +1,17 @@
+{
+    "question": "Given the following Python code, predict the output:\\n```python\\ndef compute(a, b):\\n    if a > b:\\n        return 'Greater'\\n    elif a < b:\\n        return 'Less'\\n    else:\\n        return 'Equal'\\n\\nprint(compute(5, 10))\\nprint(compute(15, 10))\\nprint(compute(10, 10))\\n```",
+    "choices": [
+        {
+            "choice": "The output will be:\\nLess\\nGreater\\nEqual.",
+            "correct": "true"
+        },
+        {
+            "choice": "The output will be:\\nGreater\\nLess\\nEqual.",
+            "correct": "false"
+        },
+        {
+            "choice": "The output will be:\\nLess\\nEqual\\nGreater.",
+            "correct": "false"
+        }
+    ]
+}

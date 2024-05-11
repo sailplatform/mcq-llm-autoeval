@@ -1,0 +1,17 @@
+{
+    "question": "Fill in the blanks: Given the following code snippet, which pandas DataFrame __1__ should replace blank 1, and what __2__ should replace blank 2 in order to analyze the 'grades' dataset, specifically to determine the average grade for each individual student?\n```python\nimport pandas as pd\n\ndata = {'Students': ['A', 'A', 'B', 'B', 'C', 'C'], 'Grades': [90, 85, 75, 80, 95, 100]}\n\ndf = pd.DataFrame(data)\n\naverage_grades = df.groupby('Students').__1__.mean()\n\nprint(average_grades)\n```",
+    "choices": [
+        {
+            "choice": "method, Grades",
+            "correct": "true"
+        },
+        {
+            "choice": "method, Students",
+            "correct": "false"
+        },
+        {
+            "choice": "function, Grades",
+            "correct": "false"
+        }
+    ]
+}

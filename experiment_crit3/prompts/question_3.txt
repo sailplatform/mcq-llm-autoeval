@@ -1,0 +1,4 @@
+Here is a multiple-choice question in JSON format.
+{QUESTION}
+
+Are the distractors that are completely unique, or are they similar?

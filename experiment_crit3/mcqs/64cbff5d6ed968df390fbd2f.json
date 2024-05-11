@@ -1,0 +1,17 @@
+{
+    "question": "An alternative name for a data structure called a stack is:",
+    "choices": [
+        {
+            "choice": "FIFO",
+            "correct": "false"
+        },
+        {
+            "choice": "LIFO",
+            "correct": "true"
+        },
+        {
+            "choice": "FOLO",
+            "correct": "false"
+        }
+    ]
+}

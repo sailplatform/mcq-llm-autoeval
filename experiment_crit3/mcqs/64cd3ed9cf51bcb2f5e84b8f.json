@@ -1,0 +1,17 @@
+{
+    "question": "Given the Python script below, what portion of the code will not be executed due to being a comment?\n\n```python\n# Initial variable setup\nx = 2\ny = 3\nz = x + y\n\n# Printing the result\nprint(f\"The sum of {x} and {y} is:{z}.\")\n\n# End of code\n```\n",
+    "choices": [
+        {
+            "choice": "print(f\"The sum of {x} and {y} is:{z}.\")",
+            "correct": "false"
+        },
+        {
+            "choice": "x = 2\ny = 3\nz = x + y",
+            "correct": "false"
+        },
+        {
+            "choice": "# Initial variable setup\n# Printing the result\n# End of code",
+            "correct": "true"
+        }
+    ]
+}

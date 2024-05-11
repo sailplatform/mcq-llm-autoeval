@@ -1,0 +1,21 @@
+{
+    "question": "What is the output of the following snippet?\n\n```python\ndef any():\n    print(var + 1, end='')\n\nvar = 1\nany()\nprint(var)\n```",
+    "choices": [
+        {
+            "choice": "21",
+            "correct": "true"
+        },
+        {
+            "choice": "22",
+            "correct": "false"
+        },
+        {
+            "choice": "12",
+            "correct": "false"
+        },
+        {
+            "choice": "11",
+            "correct": "false"
+        }
+    ]
+}

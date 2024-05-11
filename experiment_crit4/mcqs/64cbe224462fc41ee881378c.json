@@ -1,0 +1,17 @@
+{
+    "question": "In Python, what does the 'break' statement do in a loop?",
+    "choices": [
+        {
+            "choice": "It suspends the execution of the current iteration and moves to the next.",
+            "correct": "false"
+        },
+        {
+            "choice": "It terminates the entire loop and resumes execution at the next statement after the loop.",
+            "correct": "true"
+        },
+        {
+            "choice": "It skips the remaining statements in the current iteration and continues with the next iteration.",
+            "correct": "false"
+        }
+    ]
+}

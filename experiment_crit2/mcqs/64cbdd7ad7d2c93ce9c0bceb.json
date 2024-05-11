@@ -1,0 +1,17 @@
+{
+    "question": "What will be the output of the following Python code?\\n```python\\nword = 'Hello, Python!'\\nprint(len(word), type(word), word.lower())\\n```",
+    "choices": [
+        {
+            "choice": "(13, <class 'str'>, 'hello, python!')",
+            "correct": "false"
+        },
+        {
+            "choice": "(14, <class 'str'>, 'Hello, Python!')",
+            "correct": "false"
+        },
+        {
+            "choice": "(14, <class 'str'>, 'hello, python!')",
+            "correct": "true"
+        }
+    ]
+}

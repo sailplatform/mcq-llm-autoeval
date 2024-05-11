@@ -1,0 +1,17 @@
+{
+    "question": "Consider the following programming scenario:\\nYour task is to implement a Python function named `store_data` that takes as input a list of tuples. Each tuple contains a username (a string) and a set of grades (a set of integers). The function should store data in such a way that would allow for efficient search and update operations. What type of Data Structure would be appropriate for implementing this?",
+    "choices": [
+        {
+            "choice": "List",
+            "correct": "false"
+        },
+        {
+            "choice": "Set",
+            "correct": "false"
+        },
+        {
+            "choice": "Dictionary",
+            "correct": "true"
+        }
+    ]
+}

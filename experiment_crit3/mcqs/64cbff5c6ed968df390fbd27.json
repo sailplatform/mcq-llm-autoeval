@@ -1,0 +1,17 @@
+{
+    "question": "The expression:\n\n```python\n'mike' > 'Mike'\n```\n\nis",
+    "choices": [
+        {
+            "choice": "`False`",
+            "correct": "false"
+        },
+        {
+            "choice": "`True`",
+            "correct": "true"
+        },
+        {
+            "choice": "erroneous",
+            "correct": "false"
+        }
+    ]
+}

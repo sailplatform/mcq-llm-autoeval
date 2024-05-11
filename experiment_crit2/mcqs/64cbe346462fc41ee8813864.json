@@ -1,0 +1,17 @@
+{
+    "question": "Which of the following statements best describes the difference between HTML and XML documents?",
+    "choices": [
+        {
+            "choice": "HTML is used to store and transport data, while XML is used to format and display data.",
+            "correct": "false"
+        },
+        {
+            "choice": "HTML has a fixed set of tags, while XML allows the use of custom tags.",
+            "correct": "true"
+        },
+        {
+            "choice": "XML is used to design websites, while HTML is used to describe data.",
+            "correct": "false"
+        }
+    ]
+}

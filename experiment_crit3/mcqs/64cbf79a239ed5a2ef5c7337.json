@@ -1,0 +1,17 @@
+{
+    "question": "Consider the following code snippet:\n\n```python\ndef add_numbers(a, b):\n    return a + b\n\nresult = add_numbers(4, 5)\nprint(result)\n```\nWhat will be printed to the console?",
+    "choices": [
+        {
+            "choice": "4",
+            "correct": "false"
+        },
+        {
+            "choice": "5",
+            "correct": "false"
+        },
+        {
+            "choice": "9",
+            "correct": "true"
+        }
+    ]
+}

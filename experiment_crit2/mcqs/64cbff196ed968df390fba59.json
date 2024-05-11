@@ -1,0 +1,21 @@
+{
+    "question": "Given the following two setups, which of the below statements is true?\n\nSetup 1\n* Flowers have a color and size.\n* Flowers can appear or disappear from the screen.\n* Daisies, roses, lilies, orchids, and violets are all flowers.\n\n1. Anne's roses are red and occupy 10% of the screen.\n2. Amina's lilies are white and occupy 15% of the screen.\n3. Anne's roses disappear from the screen when the user presses the spacebar.\n4. Anne's roses appear on the screen when the user presses the 'a' key.\n\nSetup 2\n* All stars twinkle and have a name.\n\n1. There are only two stars on the screen ('Alpha Centauri' and 'Vega').\n2. If the user presses the spacebar: 'Alpha Centauri' (star1) twinkles.\n3. If the user clicks anywhere on the screen: 'Vega' (star2) twinkles.",
+    "choices": [
+        {
+            "choice": "Both Setup 1 and Setup 2 are suitable for object-oriented implementation, as they can both benefit from bundling related attributes and methods and from reflecting the real-life objects they are modeling. Both setup would lend themselves to modularity and code reusability.",
+            "correct": "true"
+        },
+        {
+            "choice": "Unlike Setup 2, which focuses on the procedures rather than on an object's characteristics, Setup 1 focuses on the object's properties and on code modularity and reusability. Thus, Setup 1 should be implemented using an object-oriented approach, while Setup 2 should be implemented with a procedure-oriented approach.",
+            "correct": "false"
+        },
+        {
+            "choice": "Both Setup 1 and Setup 2 are suitable for object-oriented implementation, as they both focus on an object's characteristics rather than its behaviors.",
+            "correct": "false"
+        },
+        {
+            "choice": "Neither setup is suitable for object-oriented implementation, as neither naturally maps to a class, object, attribute, or method'only procedures.",
+            "correct": "false"
+        }
+    ]
+}

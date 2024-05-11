@@ -1,0 +1,38 @@
+[
+    {
+        "role": "system",
+        "content": "You are a learning engineer support bot who is part of a team that designs and evaluates multiple-choice questions.\n\nWhen asked to answer a multiple-choice question, answer based on the choices provided. If a question has multiple answer choices that are correct, respond with all the correct answers. If none of the answer choices are correct for a question, respond with \"None of the above\". \n\nFor every question, there is an answer key created by the course staff that stores the correct answer. This answer may or may not be right. \n\nWhen prompted, keep your responses brief."
+    },
+    {
+        "role": "user",
+        "content": "Here is a multiple choice question in JSON format. Answer it based on the choices provided.\n\n{\n    \"question\": \"Given the string s = \\\"Hello, World!\\\" you need to create a piece of code that will return a list of the words in s but in reversed order while preserving the original string. Which one of the following code snippets achieves this goal?\",\n    \"choices\": [\n        {\n            \"choice\": \"```python\\nreversed_s = s.split(' ')\\nreversed_s.reverse()\\n```\"\n        },\n        {\n            \"choice\": \"```python\\nreversed_s = ''.join(reversed(s))\\nreversed_s = reversed_s.split(' ')\\n```\"\n        },\n        {\n            \"choice\": \"```python\\nreversed_s = s.split(' ')[::-1]\\n```\"\n        }\n    ]\n}"
+    },
+    {
+        "role": "assistant",
+        "content": "```python\nreversed_s = s.split(' ')[::-1]\n```"
+    },
+    {
+        "role": "user",
+        "content": "The answer key for this question says the answer is choice ```python\nreversed_s = s.split(' ')\nreversed_s.reverse()\n```. Is that correct?\n"
+    },
+    {
+        "role": "assistant",
+        "content": "No, the answer key is incorrect in this case. The code snippet:\n\n```python\nreversed_s = s.split(' ')\nreversed_s.reverse()\n```\n\nwill reverse the order of the words in the list, but it modifies the list in-place and doesn't return a new list. \n\nThe correct answer is:\n\n```python\nreversed_s = s.split(' ')[::-1]\n```\n\nThis code snippet splits the string `s` into a list of words using `split(' ')`, and then uses slicing with a step of -1 (`[::-1]`) to create a new list with the words in reversed order."
+    },
+    {
+        "role": "user",
+        "content": "Based on this principle, how would you evaluate this question?\nPrinciple:\nYou need to identify if among all the answer choices listed for the multiple choice question, there is a choice that is factually correct. This principle can be evaluated as one of the following three options, label the evaluations as options 1 through 3.\n1: There is a single correct answer\n2: There are multiple correct answers\n3: There is no correct answer\n\nReturn only the evaluation key, nothing else\n"
+    },
+    {
+        "role": "assistant",
+        "content": "1"
+    },
+    {
+        "role": "user",
+        "content": "Based on this principle, how would you evaluate this question?\nPrinciple:\nYou need to identify if the answer key has the correct answer choice. This principle can be evaluated as one of the following two options, label the evaluations as options 1 through 2.\n1: The answer key is the correct answer\n2: The answer key is not the correct answer\n\nReturn only the evaluation key, nothing else"
+    },
+    {
+        "role": "assistant",
+        "content": "2"
+    }
+]

@@ -1,0 +1,13 @@
+{
+    "question": "Line 4 of the code snippet below will cause an error.\n\n```python\nfrom random import randint\n\nclass Fish:    \n    def __init__(self, f_name, f_type, f_speed=0):\n        self.name = f_name         # fish name\n        self.fish_type = f_type    # fish type\n        self.x = randint(10, 100)  # random x coordinate of its location  \n        self.y = randint(10, 100)  # random y coordinate of its location\n        self.dx = f_speed         # horizontal displacement per unit time (speed)\n        self.rightwards = f_speed > 0    # rightwards orientation of fish\n\nfish1 = Fish('Nemo', 'clownfish', 30)                   # Line 1\nfish2 = Fish('Dory', 'royal blue tang', -20)            # Line 2\nfish3 = Fish('Nemo', 'clownfish', 30)                   # Line 3\nfish4 = Fish('Sandy', 'clownfish')                      # Line 4\nfish5 = Fish('Sandy', f_speed=40, f_type='clownfish')   # Line 5\nfish6 = Fish('Sandy', f_speed=40)                       # Line 6\n```",
+    "choices": [
+        {
+            "choice": "True",
+            "correct": "false"
+        },
+        {
+            "choice": "False",
+            "correct": "true"
+        }
+    ]
+}

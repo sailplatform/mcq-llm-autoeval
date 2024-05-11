@@ -1,0 +1,17 @@
+{
+    "question": "A namespace is:",
+    "choices": [
+        {
+            "choice": "a space in which names exist",
+            "correct": "true"
+        },
+        {
+            "choice": "a name with space",
+            "correct": "false"
+        },
+        {
+            "choice": "a space with a name",
+            "correct": "false"
+        }
+    ]
+}

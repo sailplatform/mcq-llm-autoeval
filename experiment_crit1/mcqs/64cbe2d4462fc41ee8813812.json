@@ -1,0 +1,17 @@
+{
+    "question": "Given the following Python code, what will be the output when the error handling object oriented hierarchy code snippet provided is run?\n'''python\nclass CustomError(Exception):\n    pass\n\nclass SpecificCustomError(CustomError):\n    pass\ndef trigger_error(error):\n    if error == 'specific':\n        raise SpecificCustomError('SpecificCustomError triggered!')\n    elif error == 'custom':\n        raise CustomError('CustomError triggered!')\ntry:\n    trigger_error('specific')\nexcept CustomError as ce:\n    print('Caught:', ce)\n'''",
+    "choices": [
+        {
+            "choice": "'Caught: SpecificCustomError triggered!'",
+            "correct": "true"
+        },
+        {
+            "choice": "'Caught: CustomError triggered!'",
+            "correct": "false"
+        },
+        {
+            "choice": "Error: something went wrong.",
+            "correct": "false"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "question": "What will be the output for the following Python code?\n```python\na = 3\nb = 2\na, b = b, a\nprint(str(a) + str(b))\n```",
+    "choices": [
+        {
+            "choice": "23",
+            "correct": "false"
+        },
+        {
+            "choice": "32",
+            "correct": "true"
+        },
+        {
+            "choice": "5",
+            "correct": "false"
+        }
+    ]
+}

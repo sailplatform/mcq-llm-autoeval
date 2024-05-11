@@ -1,0 +1,38 @@
+[
+    {
+        "role": "system",
+        "content": "You are a learning engineer support bot who is part of a team that designs and evaluates multiple-choice questions.\n\nWhen asked to answer a multiple-choice question, answer based on the choices provided. If a question has multiple answer choices that are correct, respond with all the correct answers. If none of the answer choices are correct for a question, respond with \"None of the above\". \n\nFor every question, there is an answer key created by the course staff that stores the correct answer. This answer may or may not be right. \n\nWhen prompted, keep your responses brief."
+    },
+    {
+        "role": "user",
+        "content": "Here is a multiple choice question in JSON format. Answer it based on the choices provided.\n\n{\n    \"question\": \"Given the following two setups, which of the below statements is true?\\n\\nSetup 1\\n* Flowers have a color and size.\\n* Flowers can appear or disappear from the screen.\\n* Daisies, roses, lilies, orchids, and violets are all flowers.\\n\\n1. Anne's roses are red and occupy 10% of the screen.\\n2. Amina's lilies are white and occupy 15% of the screen.\\n3. Anne's roses disappear from the screen when the user presses the spacebar.\\n4. Anne's roses appear on the screen when the user presses the 'a' key.\\n\\nSetup 2\\n* All stars twinkle and have a name.\\n\\n1. There are only two stars on the screen ('Alpha Centauri' and 'Vega').\\n2. If the user presses the spacebar: 'Alpha Centauri' (star1) twinkles.\\n3. If the user clicks anywhere on the screen: 'Vega' (star2) twinkles.\",\n    \"choices\": [\n        {\n            \"choice\": \"Both Setup 1 and Setup 2 are suitable for object-oriented implementation, as they can both benefit from bundling related attributes and methods and from reflecting the real-life objects they are modeling. Both setup would lend themselves to modularity and code reusability.\"\n        },\n        {\n            \"choice\": \"Unlike Setup 2, which focuses on the procedures rather than on an object's characteristics, Setup 1 focuses on the object's properties and on code modularity and reusability. Thus, Setup 1 should be implemented using an object-oriented approach, while Setup 2 should be implemented with a procedure-oriented approach.\"\n        },\n        {\n            \"choice\": \"Both Setup 1 and Setup 2 are suitable for object-oriented implementation, as they both focus on an object's characteristics rather than its behaviors.\"\n        },\n        {\n            \"choice\": \"Neither setup is suitable for object-oriented implementation, as neither naturally maps to a class, object, attribute, or method'only procedures.\"\n        }\n    ]\n}"
+    },
+    {
+        "role": "assistant",
+        "content": "The correct answer is:\n\nBoth Setup 1 and Setup 2 are suitable for object-oriented implementation, as they can both benefit from bundling related attributes and methods and from reflecting the real-life objects they are modeling. Both setup would lend themselves to modularity and code reusability."
+    },
+    {
+        "role": "user",
+        "content": "The answer key for this question says the answer is choice Both Setup 1 and Setup 2 are suitable for object-oriented implementation, as they can both benefit from bundling related attributes and methods and from reflecting the real-life objects they are modeling. Both setup would lend themselves to modularity and code reusability.. Is that correct?\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Yes, the answer key is correct. Both Setup 1 and Setup 2 are suitable for object-oriented implementation because:\n\n1. They both have objects with attributes (flowers with color and size, stars with name and twinkling behavior).\n\n2. The objects in both setups have behaviors or methods (flowers appearing/disappearing, stars twinkling).\n\n3. Implementing these setups using objects would allow for modularity and reusability of code. For example, you could create a Flower class and a Star class, each with their own attributes and methods, and instantiate multiple objects of each class as needed.\n\nSo the answer key correctly identifies that both setups lend themselves well to an object-oriented approach."
+    },
+    {
+        "role": "user",
+        "content": "Based on this principle, how would you evaluate this question?\nPrinciple:\nYou need to identify if among all the answer choices listed for the multiple choice question, there is a choice that is factually correct. This principle can be evaluated as one of the following three options, label the evaluations as options 1 through 3.\n1: There is a single correct answer\n2: There are multiple correct answers\n3: There is no correct answer\n\nReturn only the evaluation key, nothing else\n"
+    },
+    {
+        "role": "assistant",
+        "content": "1"
+    },
+    {
+        "role": "user",
+        "content": "Based on this principle, how would you evaluate this question?\nPrinciple:\nYou need to identify if the answer key has the correct answer choice. This principle can be evaluated as one of the following two options, label the evaluations as options 1 through 2.\n1: The answer key is the correct answer\n2: The answer key is not the correct answer\n\nReturn only the evaluation key, nothing else"
+    },
+    {
+        "role": "assistant",
+        "content": "1"
+    }
+]

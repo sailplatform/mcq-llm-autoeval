@@ -1,0 +1,17 @@
+{
+    "question": "In Python programming, why is it important to write comments in your code?",
+    "choices": [
+        {
+            "choice": "Comments are functional elements of the code that can affect program execution.",
+            "correct": "false"
+        },
+        {
+            "choice": "Comments help to improve the readability and maintainability of the code by explaining the function and intention of parts of the code.",
+            "correct": "true"
+        },
+        {
+            "choice": "Comments are used to debug if there is an error in the program execution.",
+            "correct": "false"
+        }
+    ]
+}

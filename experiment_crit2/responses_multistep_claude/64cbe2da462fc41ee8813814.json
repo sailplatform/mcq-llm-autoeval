@@ -1,0 +1,38 @@
+[
+    {
+        "role": "system",
+        "content": "You are a learning engineer support bot who is part of a team that designs and evaluates multiple-choice questions.\n\nWhen asked to answer a multiple-choice question, answer based on the choices provided. If a question has multiple answer choices that are correct, respond with all the correct answers. If none of the answer choices are correct for a question, respond with \"None of the above\". \n\nFor every question, there is an answer key created by the course staff that stores the correct answer. This answer may or may not be right. \n\nWhen prompted, keep your responses brief."
+    },
+    {
+        "role": "user",
+        "content": "Here is a multiple choice question in JSON format. Answer it based on the choices provided.\n\n{\n    \"question\": \"Analyze the following piece of Python code: \\n```python\\nclass NegativeNumberError(Exception):\\n    def __init__(self, value):\\n        self.value = value\\n    def __str__(self):\\n        return repr(self.value)\\n\\ntry:\\n    num = int(input(\\\"Please enter a number: \\\"))\\n    if num < 0:\\n        raise NegativeNumberError(\\\"Invalid entry - negative numbers not permitted\\\")\\nexcept NegativeNumberError as e:\\n    print(e.value)\\n```\\nIf a user inputs -5, which of the following output will you expect to see?\",\n    \"choices\": [\n        {\n            \"choice\": \"Please enter a number: -5\\nInvalid entry - negative numbers not permitted\"\n        },\n        {\n            \"choice\": \"-5\"\n        },\n        {\n            \"choice\": \"NegativeNumberError has been raised\"\n        }\n    ]\n}"
+    },
+    {
+        "role": "assistant",
+        "content": "Based on the given choices, the correct output would be:\n\nPlease enter a number: -5\nInvalid entry - negative numbers not permitted\n\nThe code raises a custom NegativeNumberError exception when the user inputs a negative number. The exception message is then printed using the value attribute of the exception object."
+    },
+    {
+        "role": "user",
+        "content": "The answer key for this question says the answer is choice Please enter a number: -5\nInvalid entry - negative numbers not permitted. Is that correct?\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Yes, the answer key is correct. The output will be:\n\nPlease enter a number: -5\nInvalid entry - negative numbers not permitted\n\nThis matches the first choice provided in the question. The code will prompt the user to enter a number, and if the user enters -5, it will raise the custom NegativeNumberError exception with the message \"Invalid entry - negative numbers not permitted\". This message will then be printed due to the print(e.value) statement in the except block."
+    },
+    {
+        "role": "user",
+        "content": "Based on this principle, how would you evaluate this question?\nPrinciple:\nYou need to identify if among all the answer choices listed for the multiple choice question, there is a choice that is factually correct. This principle can be evaluated as one of the following three options, label the evaluations as options 1 through 3.\n1: There is a single correct answer\n2: There are multiple correct answers\n3: There is no correct answer\n\nReturn only the evaluation key, nothing else\n"
+    },
+    {
+        "role": "assistant",
+        "content": "1"
+    },
+    {
+        "role": "user",
+        "content": "Based on this principle, how would you evaluate this question?\nPrinciple:\nYou need to identify if the answer key has the correct answer choice. This principle can be evaluated as one of the following two options, label the evaluations as options 1 through 2.\n1: The answer key is the correct answer\n2: The answer key is not the correct answer\n\nReturn only the evaluation key, nothing else"
+    },
+    {
+        "role": "assistant",
+        "content": "1"
+    }
+]

@@ -1,0 +1,17 @@
+{
+    "question": "Fill in the blank: In the following Python code, the range function is used in a for loop to iterate over a sequence of numbers. What should replace the blank to make the loop iterate over the numbers 0 through 10?\n```python\nfor i in ______:\n    print(i)\n```",
+    "choices": [
+        {
+            "choice": "range(10)",
+            "correct": "false"
+        },
+        {
+            "choice": "range(0, 10)",
+            "correct": "false"
+        },
+        {
+            "choice": "range(1, 11)",
+            "correct": "true"
+        }
+    ]
+}

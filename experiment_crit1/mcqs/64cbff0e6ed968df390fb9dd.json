@@ -1,0 +1,21 @@
+{
+    "question": "Fill in the blank of the `is_negative` function definition shown below, so that the function returns `True` when the argument provided to `num` is a negative number and returns `False` otherwise.\n\n```python\ndef is_negative(num):\n    return _________________\n```",
+    "choices": [
+        {
+            "choice": "`not (num > 0)`",
+            "correct": "false"
+        },
+        {
+            "choice": "`num > 0`",
+            "correct": "false"
+        },
+        {
+            "choice": "`num <= 0`",
+            "correct": "false"
+        },
+        {
+            "choice": "`num < 0`",
+            "correct": "true"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+[
+    {
+        "role": "system",
+        "content": "You are a learning engineer support bot who is part of a team that designs and evaluates multiple-choice questions.\n\nWhen asked to answer a multiple-choice question, answer based on the choices provided. If a question has multiple answer choices that are correct, respond with all the correct answers. If none of the answer choices are correct for a question, respond with \"None of the above\". \n\nFor every question, there is an answer key created by the course staff that stores the correct answer. This answer may or may not be right. \n\nWhen prompted, keep your responses brief."
+    },
+    {
+        "role": "user",
+        "content": "Here is a multiple choice question in JSON format. Answer it based on the choices provided.\n\n{\n    \"question\": \"What is the output of the following snippet?\\n\\n```python\\ndct = {}\\ndct['1] = {1, 2}\\ndct['2'] = {2, 1}\\n\\nfor x in dct.keys():\\n    print(dct[x][1], end=\\\"\\\")\\n```\",\n    \"choices\": [\n        {\n            \"choice\": \"12\"\n        },\n        {\n            \"choice\": \"`(2,1)`\"\n        },\n        {\n            \"choice\": \"`(1,2)`\"\n        },\n        {\n            \"choice\": \"21\"\n        }\n    ]\n}"
+    },
+    {
+        "role": "assistant",
+        "content": "The code will raise a KeyError because the keys '1' and '2' are not properly formatted. The opening quote is not the same as the closing quote for the keys.\n\nIf the keys were properly formatted as '1' and '2', then the output would be:\n\n21\n\nSo the correct answer based on the given choices is:\n\n21"
+    },
+    {
+        "role": "user",
+        "content": "The answer key for this question says the answer is choice 21. Is that correct?\n"
+    },
+    {
+        "role": "assistant",
+        "content": "No, the answer key is not correct in this case. The code snippet contains a syntax error due to the mismatched quotes around the dictionary keys '1' and '2'. The opening quote is a backtick (`) while the closing quote is a regular single quote (').\n\nIn Python, dictionary keys must be enclosed in proper quotes, either single quotes ('') or double quotes (\"\"). Mismatched quotes will result in a SyntaxError.\n\nTherefore, this code snippet will not produce any output and will raise a SyntaxError before reaching the print statement. None of the provided answer choices are correct for this question."
+    },
+    {
+        "role": "user",
+        "content": "Based on this principle, how would you evaluate this question?\nPrinciple:\nYou need to identify if among all the answer choices listed for the multiple choice question, there is a choice that is factually correct. This principle can be evaluated as one of the following three options, label the evaluations as options 1 through 3.\n1: There is a single correct answer\n2: There are multiple correct answers\n3: There is no correct answer\n\nReturn only the evaluation key, nothing else\n"
+    },
+    {
+        "role": "assistant",
+        "content": "4"
+    }
+]

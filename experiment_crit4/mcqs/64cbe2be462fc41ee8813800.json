@@ -1,0 +1,17 @@
+{
+    "question": "Consider the following Python code:\n'''python\nclass Employee:\n    def __init__(self, name, position, salary):\n        self.name = name\n        self.position = position\n        self.salary = salary\n    def print_salary_info(self):\n        return '\"' + self.name + '\"' + ' is the ' + self.position + ' and earns ' + str(self.salary) + ' dollars per year.'\n\nemployee1 = Employee('John Doe', 'Manager', 67000)\nprint(employee1.print_salary_info())\n'''\nWhat is the output of this code?",
+    "choices": [
+        {
+            "choice": "'John Doe is the Manager and earns 67000 dollars per year.'",
+            "correct": "true"
+        },
+        {
+            "choice": "'employee1 is the Manager and earns 67000 dollars per year.'",
+            "correct": "false"
+        },
+        {
+            "choice": "'John Doe is the employee1 and earns None dollars per year.'",
+            "correct": "false"
+        }
+    ]
+}

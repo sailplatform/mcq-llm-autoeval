@@ -1,0 +1,17 @@
+{
+    "question": "Fill in the blank: Given the following code snippet in Python, what should replace the blank to match the pattern 'python' in a case insensitive manner using regular expressions?\\n```python\\nimport re\\ntext = 'Python is an excellent language for data science.'\\nmatch = re.______('python', text, re.I)\\n```",
+    "choices": [
+        {
+            "choice": "match",
+            "correct": "false"
+        },
+        {
+            "choice": "search",
+            "correct": "true"
+        },
+        {
+            "choice": "findall",
+            "correct": "false"
+        }
+    ]
+}

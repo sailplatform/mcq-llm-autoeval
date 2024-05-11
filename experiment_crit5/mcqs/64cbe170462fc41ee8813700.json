@@ -1,0 +1,17 @@
+{
+    "question": "Why is it beneficial to use properly named functions and variables in Python programming?",
+    "choices": [
+        {
+            "choice": "It increases the speed of program execution.",
+            "correct": "false"
+        },
+        {
+            "choice": "It makes the code easier to read, understand, and maintain.",
+            "correct": "true"
+        },
+        {
+            "choice": "It reduces the amount of memory used by the program.",
+            "correct": "false"
+        }
+    ]
+}

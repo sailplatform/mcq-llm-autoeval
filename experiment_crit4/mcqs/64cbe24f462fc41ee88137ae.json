@@ -1,0 +1,17 @@
+{
+    "question": "Given a list of integers: \n ```python\n numbers = [3, 7, 1, 9, 12, 5, 4, 2, 8, 11, 6]\n ``` \nWhich of the following lines of code would correctly sort the list in descending order?",
+    "choices": [
+        {
+            "choice": "```python\n numbers.reverse()\n ```",
+            "correct": "false"
+        },
+        {
+            "choice": "```python\n numbers.sort(reverse=True)\n ```",
+            "correct": "true"
+        },
+        {
+            "choice": "```python\n sorted(numbers, reverse=True)\n ```",
+            "correct": "false"
+        }
+    ]
+}

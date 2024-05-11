@@ -1,0 +1,38 @@
+[
+    {
+        "role": "system",
+        "content": "You are a learning engineer support bot who is part of a team that designs and evaluates multiple-choice questions.\n\nWhen asked to answer a multiple-choice question, answer based on the choices provided. If a question has multiple answer choices that are correct, respond with all the correct answers. If none of the answer choices are correct for a question, respond with \"None of the above\". \n\nFor every question, there is an answer key created by the course staff that stores the correct answer. This answer may or may not be right. \n\nWhen prompted, keep your responses brief."
+    },
+    {
+        "role": "user",
+        "content": "Here is a multiple choice question in JSON format. Answer it based on the choices provided.\n\n{\n    \"question\": \"You have a data set stored in a dictionary in Python, which you want to understand on a more detailed level.\\n\\n```python\\nstatistics = {\\n    'sample_size': 200,\\n    'mean': 5.2,\\n    'median': 5.0,\\n    'mode': 2.5,\\n    'standard_deviation': 1.2\\n}\\n\\n# Checking for broad usability by looking at key aspects\\nusable = all(key in statistics for key in ['sample_size',  'mean', 'median', 'standard_deviation']) \\n\\n# Checking if sample size is large enough for stable statistics\\nstable_statistics = statistics['sample_size'] > 30\\n\\n# Checking if mean and median are close, suggesting a symmetric distribution\\nsymmetric_distribution = abs(statistics['mean'] - statistics['median']) < 0.1 * statistics['standard_deviation']\\n\\nprint(usable and stable_statistics and symmetric_distribution)\\n```\\n\\nYou run this Python program, what will be the output?\",\n    \"choices\": [\n        {\n            \"choice\": \"True\"\n        },\n        {\n            \"choice\": \"False\"\n        },\n        {\n            \"choice\": \"Error\"\n        }\n    ]\n}"
+    },
+    {
+        "role": "assistant",
+        "content": "True"
+    },
+    {
+        "role": "user",
+        "content": "The answer key for this question says the answer is choice True. Is that correct?\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Yes, the answer key is correct. The code will print out \"True\" because:\n\n1. The `usable` variable will be True since all the required keys ('sample_size', 'mean', 'median', 'standard_deviation') are present in the `statistics` dictionary.\n\n2. The `stable_statistics` variable will be True because the sample size (200) is greater than 30.\n\n3. The `symmetric_distribution` variable will be True because the absolute difference between the mean (5.2) and median (5.0) is less than 0.1 times the standard deviation (1.2).\n\nSince all three conditions are True, the final print statement will output True."
+    },
+    {
+        "role": "user",
+        "content": "Based on this principle, how would you evaluate this question?\nPrinciple:\nYou need to identify if among all the answer choices listed for the multiple choice question, there is a choice that is factually correct. This principle can be evaluated as one of the following three options, label the evaluations as options 1 through 3.\n1: There is a single correct answer\n2: There are multiple correct answers\n3: There is no correct answer\n\nReturn only the evaluation key, nothing else\n"
+    },
+    {
+        "role": "assistant",
+        "content": "1"
+    },
+    {
+        "role": "user",
+        "content": "Based on this principle, how would you evaluate this question?\nPrinciple:\nYou need to identify if the answer key has the correct answer choice. This principle can be evaluated as one of the following two options, label the evaluations as options 1 through 2.\n1: The answer key is the correct answer\n2: The answer key is not the correct answer\n\nReturn only the evaluation key, nothing else"
+    },
+    {
+        "role": "assistant",
+        "content": "1"
+    }
+]

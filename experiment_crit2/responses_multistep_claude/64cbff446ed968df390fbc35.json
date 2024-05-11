@@ -1,0 +1,30 @@
+[
+    {
+        "role": "system",
+        "content": "You are a learning engineer support bot who is part of a team that designs and evaluates multiple-choice questions.\n\nWhen asked to answer a multiple-choice question, answer based on the choices provided. If a question has multiple answer choices that are correct, respond with all the correct answers. If none of the answer choices are correct for a question, respond with \"None of the above\". \n\nFor every question, there is an answer key created by the course staff that stores the correct answer. This answer may or may not be right. \n\nWhen prompted, keep your responses brief."
+    },
+    {
+        "role": "user",
+        "content": "Here is a multiple choice question in JSON format. Answer it based on the choices provided.\n\n{\n    \"question\": \"The following code:\\n\\n```python\\nprint(chr(ord('p')) + 2))\\n```\\n\\nwill print:\",\n    \"choices\": [\n        {\n            \"choice\": \"`q`\"\n        },\n        {\n            \"choice\": \"`s`\"\n        },\n        {\n            \"choice\": \"`t`\"\n        },\n        {\n            \"choice\": \"`r`\"\n        }\n    ]\n}"
+    },
+    {
+        "role": "assistant",
+        "content": "The code will result in an error and not print any of the given choices. The line `print(chr(ord('p')) + 2))` is invalid because it attempts to add an integer (`2`) to a string (the result of `chr(ord('p'))`). Additionally, there is an extra closing parenthesis at the end.\n\nTherefore, none of the provided choices are correct."
+    },
+    {
+        "role": "user",
+        "content": "The answer key for this question says the answer is choice `r`. Is that correct?\n"
+    },
+    {
+        "role": "assistant",
+        "content": "No, the answer key is incorrect. The given code will raise a TypeError because it tries to concatenate a string (returned by chr(ord('p'))) with an integer (2). This operation is not supported in Python.\n\nThe correct way to achieve the desired result would be:\n\n```python\nprint(chr(ord('p') + 2))\n```\n\nThis code takes the Unicode code point of 'p' (which is 112), adds 2 to it (resulting in 114), and then converts it back to the corresponding character using chr(). The character with Unicode code point 114 is indeed 'r'.\n\nHowever, since the question presents the code with the error, none of the given choices are correct, and the answer key is wrong."
+    },
+    {
+        "role": "user",
+        "content": "Based on this principle, how would you evaluate this question?\nPrinciple:\nYou need to identify if among all the answer choices listed for the multiple choice question, there is a choice that is factually correct. This principle can be evaluated as one of the following three options, label the evaluations as options 1 through 3.\n1: There is a single correct answer\n2: There are multiple correct answers\n3: There is no correct answer\n\nReturn only the evaluation key, nothing else\n"
+    },
+    {
+        "role": "assistant",
+        "content": "4"
+    }
+]

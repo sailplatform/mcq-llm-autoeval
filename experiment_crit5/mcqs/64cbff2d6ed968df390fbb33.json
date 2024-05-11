@@ -1,0 +1,25 @@
+{
+    "question": "What is the expected behavior of the following program?\n\n```python\nfoo = (1, 2, 3)\nfoo.index(0)\n```",
+    "choices": [
+        {
+            "choice": "The program will output 1 to the screen.",
+            "correct": "false"
+        },
+        {
+            "choice": "The program will cause an AttributeError exception.",
+            "correct": "false"
+        },
+        {
+            "choice": "The program will cause a SyntaxError exception.",
+            "correct": "false"
+        },
+        {
+            "choice": "The program will cause a TypeError exception.",
+            "correct": "false"
+        },
+        {
+            "choice": "The program will cause a ValueError exception.",
+            "correct": "true"
+        }
+    ]
+}

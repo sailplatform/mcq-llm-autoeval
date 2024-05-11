@@ -1,0 +1,21 @@
+{
+    "question": "What will be the output of the following code snippet?\n\n```python\ns1 = {1, 2, 3, 4}\ns2 = {'a', 'b', 'c'}\ns3 = {3}\ns4 = s1.union(s2)\ns5 = s3.intersection(s4)\ns6 = s1.difference(s3)\ns7 = s3.union(s6)\n\nif s3.issubset(s4):\n    print(s7)\nelse:\n     print(s3)\n```",
+    "choices": [
+        {
+            "choice": "`{1, 2, 4}`",
+            "correct": "false"
+        },
+        {
+            "choice": "`{3}`",
+            "correct": "false"
+        },
+        {
+            "choice": "`{1, 2, 3, 4}`",
+            "correct": "true"
+        },
+        {
+            "choice": "`{1, 2, 3, 3, 4}`",
+            "correct": "false"
+        }
+    ]
+}

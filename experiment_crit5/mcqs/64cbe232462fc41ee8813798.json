@@ -1,0 +1,17 @@
+{
+    "question": "Fill in the blank: Consider the following Python script. The script attempts to add elements to a list and a set and then prints them. However, there is a piece of code missing. What Python code should replace the blank such that the following behavior is observed?\\n```python\\nmy_list = []\\nmy_set = set()\\nfor i in range(5):\\n    ____\\nprint(my_list)\\nprint(my_set)\\n```The order of the elements in 'my_list' is preserved, i.e., the printed list is '0, 1, 2, 3, 4'. However, the printed set 'my_set' does not preserve the order of elements.",
+    "choices": [
+        {
+            "choice": "my_list.append(i); my_set.add(i)",
+            "correct": "true"
+        },
+        {
+            "choice": "my_list.insert(i); my_set.add(i)",
+            "correct": "false"
+        },
+        {
+            "choice": "my_list.push(i); my_set.put(i)",
+            "correct": "false"
+        }
+    ]
+}

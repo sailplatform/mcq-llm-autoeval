@@ -1,0 +1,17 @@
+{
+    "question": "The `0x` prefix means that the number after it is denoted as:",
+    "choices": [
+        {
+            "choice": "an octal",
+            "correct": "false"
+        },
+        {
+            "choice": "a decimal",
+            "correct": "false"
+        },
+        {
+            "choice": "a hexadecimal",
+            "correct": "true"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "question": "Consider the following numerical scale to collect a user's preferences for a new software feature. Based on the scale below, the data collected through this study would be:\n\n0 means \"This feature does not interest me, and I would strongly discourage adding it.\"\n1 means \"This feature does not interest me, but I may use it if added.\"\n2 means \"This feature interests me greatly, and I strongly suggest adding it.\"",
+    "choices": [
+        {
+            "choice": "Qualitative nominal",
+            "correct": "false"
+        },
+        {
+            "choice": "Qualitative ordinal",
+            "correct": "true"
+        },
+        {
+            "choice": "Discrete quantitative",
+            "correct": "false"
+        },
+        {
+            "choice": "Discrete qualitative",
+            "correct": "false"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "question": "Suppose you have a function named `capitalize_name` in a Python file named `name_formatter.py` that capitalizes the first letter of a name and you have also written several tests for it in a different file named `test_name_formatter.py`. You are required to verify that the tests cover all lines of code in the `capitalize_name` function using a Python coverage library. Which of the following terminal commands would correctly provide the required test coverage? ",
+    "choices": [
+        {
+            "choice": "```python\npython3 -m unittest -b test_name_formatter.py\n```",
+            "correct": "false"
+        },
+        {
+            "choice": "```python\npython3 -m unittest discover\n```",
+            "correct": "false"
+        },
+        {
+            "choice": "```python\npython3 -m coverage run -m unittest test_name_formatter.py\n```",
+            "correct": "true"
+        }
+    ]
+}

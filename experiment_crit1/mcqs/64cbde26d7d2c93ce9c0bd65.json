@@ -1,0 +1,17 @@
+{
+    "question": "In Python, which function is used to convert another data type into a string?",
+    "choices": [
+        {
+            "choice": "str()",
+            "correct": "true"
+        },
+        {
+            "choice": "string()",
+            "correct": "false"
+        },
+        {
+            "choice": "to_string()",
+            "correct": "false"
+        }
+    ]
+}

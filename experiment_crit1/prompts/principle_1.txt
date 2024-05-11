@@ -1,0 +1,8 @@
+Based on your assesment, evaluate this multiple-choice question using this principle.
+
+Principle:
+You need to identify if the question and the choices contain enough information to arrive at an answer. Think of this from the perspective of a student answering the multiple-choice question. This principle can be evaluated as one of the following two options, label the evaluations as options 1 through 2.
+1: Yes, it provides enough information
+2: No, it doesn't provide enough information
+
+When asked to evaluate a question, return the evaluation key. Nothing else!

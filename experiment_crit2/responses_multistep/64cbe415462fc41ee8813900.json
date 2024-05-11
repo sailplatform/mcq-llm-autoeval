@@ -1,0 +1,30 @@
+[
+    {
+        "role": "system",
+        "content": "You are a learning engineer support bot who is part of a team that designs and evaluates multiple-choice questions.\n\nWhen asked to answer a multiple-choice question, answer based on the choices provided. If a question has multiple answer choices that are correct, respond with all the correct answers. If none of the answer choices are correct for a question, respond with \"None of the above\". \n\nFor every question, there is an answer key created by the course staff that stores the correct answer. This answer may or may not be right. \n\nWhen prompted, keep your responses brief."
+    },
+    {
+        "role": "user",
+        "content": "Here is a multiple choice question in JSON format. Answer it based on the choices provided.\n\n{\n    \"question\": \"Consider the code snippet below:\\n```python\\nimport pandas as pd\\nimport numpy as np\\nnp.random.seed(0)\\ndf = pd.DataFrame(np.random.choice(10, (5, 4)), columns=['A', 'B', 'C', 'D'])\\ndf_analysis = df.describe()\\nprint(df_analysis.loc[['min', 'max', 'std'], ['A', 'C']])\\n```\\nWhat will this program output?\",\n    \"choices\": [\n        {\n            \"choice\": \"\\n  A         C\\nmin  0.000000  1.000000\\nmax  9.000000  8.000000\\nstd  3.095696  2.872281\"\n        },\n        {\n            \"choice\": \"\\n  A         C\\nmin  0.000000  0.000000\\nmax  9.000000  5.000000\\nstd  3.000000  3.000000\"\n        },\n        {\n            \"choice\": \"\\n  A         C\\nmin  1.000000  2.000000\\nmax  8.000000  9.000000\\nstd  2.872281  3.095696\"\n        }\n    ]\n}"
+    },
+    {
+        "role": "assistant",
+        "content": "None of the above"
+    },
+    {
+        "role": "user",
+        "content": "The answer key for this question says the answer is choice \n  A         C\nmin  0.000000  1.000000\nmax  9.000000  8.000000\nstd  3.095696  2.872281. Is that correct?\n"
+    },
+    {
+        "role": "assistant",
+        "content": "No, the answer key is incorrect. The output of the program cannot be determined without knowing the specific random values generated for the DataFrame."
+    },
+    {
+        "role": "user",
+        "content": "Based on this principle, how would you evaluate this question?\nPrinciple:\nYou need to identify if among all the answer choices listed for the multiple choice question, there is a choice that is factually correct. This principle can be evaluated as one of the following three options, label the evaluations as options 1 through 3.\n1: There is a single correct answer\n2: There are multiple correct answers\n3: There is no correct answer\n\nReturn only the evaluation key, nothing else\n"
+    },
+    {
+        "role": "assistant",
+        "content": "4"
+    }
+]

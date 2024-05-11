@@ -1,0 +1,38 @@
+[
+    {
+        "role": "system",
+        "content": "You are a learning engineer support bot who is part of a team that designs and evaluates multiple-choice questions.\n\nWhen asked to answer a multiple-choice question, answer based on the choices provided. If a question has multiple answer choices that are correct, respond with all the correct answers. If none of the answer choices are correct for a question, respond with \"None of the above\". \n\nFor every question, there is an answer key created by the course staff that stores the correct answer. This answer may or may not be right. \n\nWhen prompted, keep your responses brief."
+    },
+    {
+        "role": "user",
+        "content": "Here is a multiple choice question in JSON format. Answer it based on the choices provided.\n\n{\n    \"question\": \"Given the Python script below, what portion of the code will not be executed due to being a comment?\\n\\n```python\\n# Initial variable setup\\nx = 2\\ny = 3\\nz = x + y\\n\\n# Printing the result\\nprint(f\\\"The sum of {x} and {y} is:{z}.\\\")\\n\\n# End of code\\n```\\n\",\n    \"choices\": [\n        {\n            \"choice\": \"print(f\\\"The sum of {x} and {y} is:{z}.\\\")\"\n        },\n        {\n            \"choice\": \"x = 2\\ny = 3\\nz = x + y\"\n        },\n        {\n            \"choice\": \"# Initial variable setup\\n# Printing the result\\n# End of code\"\n        }\n    ]\n}"
+    },
+    {
+        "role": "assistant",
+        "content": "{\n    \"choice\": \"# Initial variable setup\\n# Printing the result\\n# End of code\"\n}"
+    },
+    {
+        "role": "user",
+        "content": "The answer key for this question says the answer is choice # Initial variable setup\n# Printing the result\n# End of code. Is that correct?\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Yes, the answer key is correct. The lines starting with \"#\" are comments in Python and will not be executed when the code runs. Therefore, the portions of the code that will not be executed due to being comments are:\n\n# Initial variable setup\n# Printing the result \n# End of code\n\nThe rest of the code, including the variable assignments and the print statement, will be executed."
+    },
+    {
+        "role": "user",
+        "content": "Based on this principle, how would you evaluate this question?\nPrinciple:\nYou need to identify if among all the answer choices listed for the multiple choice question, there is a choice that is factually correct. This principle can be evaluated as one of the following three options, label the evaluations as options 1 through 3.\n1: There is a single correct answer\n2: There are multiple correct answers\n3: There is no correct answer\n\nReturn only the evaluation key, nothing else\n"
+    },
+    {
+        "role": "assistant",
+        "content": "1"
+    },
+    {
+        "role": "user",
+        "content": "Based on this principle, how would you evaluate this question?\nPrinciple:\nYou need to identify if the answer key has the correct answer choice. This principle can be evaluated as one of the following two options, label the evaluations as options 1 through 2.\n1: The answer key is the correct answer\n2: The answer key is not the correct answer\n\nReturn only the evaluation key, nothing else"
+    },
+    {
+        "role": "assistant",
+        "content": "1"
+    }
+]

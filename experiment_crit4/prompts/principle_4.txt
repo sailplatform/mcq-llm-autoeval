@@ -1,0 +1,8 @@
+Based on your assesment, evaluate the distractors in this multiple-choice question using this principle.
+
+Principle:
+You need to evaluate the quality of the distractors in terms of how difficult it is for a student to answer the question. This principle can be evaluated as one of the following two options, label the evaluations as options 1 through 2.
+1: There are no obviously wrong options that give away the answer easily
+2: There is at least one option that can be easily eliminated as being incorrect
+
+When asked to evaluate a question, return the evaluation key. Nothing else!

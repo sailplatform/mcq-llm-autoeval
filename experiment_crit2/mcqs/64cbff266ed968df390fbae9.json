@@ -1,0 +1,21 @@
+{
+    "question": "In the XML file above, the \"To Kill A Mockingbird\" book is a favorite book and \"Utopia\" is not. However, the output of the current Python script prints both records, although it should only print favorite books. How can we fix this?\n\n```python\nimport xml.etree.ElementTree as ET\n\ntree = ET.parse(books.xml')\nroot = tree.getroot()\n\nfor book in root.findall('book'):\n    if book.attrib['favorite']:\n        print(book.find('title').text,\n            'by', book.find('author').text,\n            '-', book.attrib['favorite']\n            )\n```\n\nbooks.xml:\n```\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<books>\n<book isbn=\"978-0140449105\" favorite=\"False\">\n    <year>1516</year>\n    <title>Utopia</title>\n    <author>Sir Thomas More</author>\n    <publication>\n        <date>May 6, 2003</date>\n        <publisher>Penguin Classics</publisher>\n    </publication>\n</book>\n<book isbn=\"978-0060935467\" favorite=\"True\">\n    <year>1960</year>\n    <title>To Kill A Mockingbird</title>\n    <author>Harper Lee</author>\n    <publication>\n        <date>January 1, 2002</date>\n        <publisher>Harper Perennial</publisher>\n    </publication>\n</book>\n</books>\n```\n\nOutput:\n```\nUtopia by Sir Thomas More - False\nTo Kill A Mockingbird by Harper Lee - True\n```",
+    "choices": [
+        {
+            "choice": "The if statement in the Python script should be rewritten as: if `book.find('favorite').text:`",
+            "correct": "false"
+        },
+        {
+            "choice": "The if statement in the Python script should be rewritten as: if `book.attrib['favorite'] == 'True':`",
+            "correct": "true"
+        },
+        {
+            "choice": "We should rewrite the XML file and use only lowercase letters for the True and False values, such as: ...favorite=\"false\"> ...favorite=\"true\">",
+            "correct": "false"
+        },
+        {
+            "choice": "The if statement in the Python script should be rewritten as: `if book.find('favorite').text == 'True':`",
+            "correct": "false"
+        }
+    ]
+}

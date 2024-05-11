@@ -1,0 +1,17 @@
+{
+    "question": "You are developing a Python program for a project. The team has agreed upon adhering to naming conventions in Python and avoiding variable shadowing for better code readability, comprehensibility, and maintainability. You have a function in your code that updates a record in a list of dictionaries. You used one of the built-in Python functions as a name for one of your variables, causing a NameError when you invoked the built-in function. \\n\\n What would be the best approach to avoid this kind of naming conflict in your program?",
+    "choices": [
+        {
+            "choice": "Choose descriptive names for your variables and try to avoid using built-in function names. Always check Python's list of built-in function names.",
+            "correct": "true"
+        },
+        {
+            "choice": "Only use single-letter variables to avoid any possible naming conflict.",
+            "correct": "false"
+        },
+        {
+            "choice": "Prefix all your variable names with the character '_'. This ensures variable names won't conflict with any built-in functions.",
+            "correct": "false"
+        }
+    ]
+}

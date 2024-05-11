@@ -1,0 +1,17 @@
+{
+    "question": "In the context of formulating problem statements, what should be the primary focus while examining a dataset's inputs and outputs?",
+    "choices": [
+        {
+            "choice": "The primary focus should be on identifying the type of programming language used.",
+            "correct": "false"
+        },
+        {
+            "choice": "The primary focus should be on understanding the overall objective of the data analysis.",
+            "correct": "true"
+        },
+        {
+            "choice": "The primary focus should be on optimizing the runtime of the programs used to interpret the data.",
+            "correct": "false"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+Based on this principle, how would you evaluate this question?
+Principle:
+You need to identify if the answer key has the correct answer choice. This principle can be evaluated as one of the following two options, label the evaluations as options 1 through 2.
+1: The answer key is the correct answer
+2: The answer key is not the correct answer
+
+Return only the evaluation key, nothing else
