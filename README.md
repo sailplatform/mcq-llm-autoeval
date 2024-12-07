@@ -9,11 +9,33 @@
 
 ## Overview
 
-This codebase implements an intuitive pipeline for utilizing
-Large Language Models (LLMs) to evaluate the quality of Multiple Choice Questions (MCQs) by rating them against a set of quality criteria.
+This codebase implements an intuitive pipeline for utilizing Large Language Models (LLMs) to evaluate the quality of Multiple Choice Questions (MCQs) by rating them against a set of quality criteria.
 
 At the time of creating this project, there does not exist an easy-to-use repository for automatically evaluating the quality of MCQs without human input. There has been recent literature exploring the capabilities of LLMs to automatically generate MCQs, but such systems still need human evaluators to guage the performance of the system. 
 
+## Attribution
+
+Aninditha Ramesh, Arav Agarwal, Jacob Arthur Doughty, Ketan Ramaneti, Jaromir Savelka, and Majd Sakr. 2024. A Benchmark for Testing the Capabilities of LLMs in Assessing the Quality of Multiple-choice Questions in Introductory Programming Education. In Proceedings of the 2024 on ACM Virtual Global Computing Education Conference V. 1 (SIGCSE Virtual 2024). Association for Computing Machinery, New York, NY, USA, 193–199. https://doi.org/10.1145/3649165.3690123
+
+```
+@inproceedings{10.1145/3649165.3690123,
+author = {Ramesh, Aninditha and Agarwal, Arav and Doughty, Jacob Arthur and Ramaneti, Ketan and Savelka, Jaromir and Sakr, Majd},
+title = {A Benchmark for Testing the Capabilities of LLMs in Assessing the Quality of Multiple-choice Questions in Introductory Programming Education},
+year = {2024},
+isbn = {9798400705984},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3649165.3690123},
+doi = {10.1145/3649165.3690123},
+abstract = {There has been a growing interest in utilizing large language models (LLMs) for numerous educational applications. Recent studies have focused on the use of LLMs for generating various educational artifacts for programming education, such as programming exercises, model solutions, or multiple-choice questions (MCQs). The ability to efficiently and reliably assess the quality of such artifacts, both automatically and human generated, has become of paramount importance. Hence, there is a pressing need to develop and make available robust benchmarks. In this paper, we investigate an example use case of assessing the quality of programming MCQs. To that end, we carefully curated a data set of 192 MCQs annotated with quality scores based on a rubric that evaluates crucial aspects such as, e.g., their clarity, the presence of a single correct answer, and the quality of distractors. The results show that the task presents a considerable challenge even to the state-of-the-art LLMs and, hence, further research is needed. To further such research efforts in this important area we release the dataset as well as the extensible evaluation pipeline to the public.},
+booktitle = {Proceedings of the 2024 on ACM Virtual Global Computing Education Conference V. 1},
+pages = {193–199},
+numpages = {7},
+keywords = {assessments, automated evaluation, claude, computing education, gpt-4, large language models, llama, llms, mcqs, multiple choice questions},
+location = {Virtual Event, NC, USA},
+series = {SIGCSE Virtual 2024}
+}
+```
 
 ## File Structure
 
@@ -137,5 +159,3 @@ This codebase currently contains 192 multiple choice questions, but more can eas
 2. Provide any relevant gold labels to `data/gold_labels`. Do so by creating a new CSV file in ``data/gold_labels/``. The CSV file should have the following columns:
 ``questionID``, ``criteria 1``, ``criteria 2``, ... ``criteria n``
 where ``n`` is the number of criteria.
-
-
