@@ -1,0 +1,21 @@
+{
+    "question": "The following statement:\n\n```python\nfrom a.b import c\n```\n\ncauses the import of:",
+    "choices": [
+        {
+            "choice": "entity `c` from module `b` from package `a`",
+            "correct": "true"
+        },
+        {
+            "choice": "entity `a` from module `b` from package `c`",
+            "correct": "false"
+        },
+        {
+            "choice": "entity `c` from module `a` from package `b`",
+            "correct": "false"
+        },
+        {
+            "choice": "entity `b` from module `a` from package `c`",
+            "correct": "false"
+        }
+    ]
+}

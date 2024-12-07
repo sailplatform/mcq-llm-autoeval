@@ -1,0 +1,17 @@
+{
+    "question": "Oliver, a data scientist, is working on a project that involves processing a large dataset of grocery transactions. To analyze the data, he decides to take advantage of pandas Series, which can build on top of numpy datatypes. He needs to create a Series object that represents the quantity of apples sold each day over a given week, where the quantity sold might be in floating point numbers as there could be transactions with partial amounts.\\n\\nGiven that the record of sales is as follows: Monday - 35.5, Tuesday - 40, Wednesday - 30, Thursday - 50.2, Friday - 42, Saturday - 60.1, Sunday - 52.5. Which of the following code snippets does this accurately using pandas Series?",
+    "choices": [
+        {
+            "choice": "import pandas as pd\\n\\napples_sold = pd.Series({'Monday': 35.5, 'Tuesday': 40, 'Wednesday': 30, 'Thursday': 50.2, 'Friday': 42, 'Saturday': 60.1, 'Sunday': 52.5}, dtype='float')",
+            "correct": "true"
+        },
+        {
+            "choice": "import pandas as pd\\n\\napples_sold = pd.Series([35.5, 40, 30, 50.2, 42, 60.1, 52.5])",
+            "correct": "false"
+        },
+        {
+            "choice": "import pandas as pd\\n\\napples_sold = pd.Series({'Monday': '35.5', 'Tuesday': '40', 'Wednesday': '30', 'Thursday': '50.2', 'Friday': '42', 'Saturday': '60.1', 'Sunday': '52.5'})",
+            "correct": "false"
+        }
+    ]
+}

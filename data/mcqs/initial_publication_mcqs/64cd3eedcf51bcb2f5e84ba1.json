@@ -1,0 +1,17 @@
+{
+    "question": "Consider the following Python code snippet used to query records from a table in the MySQL database: \n\n```python\nimport mysql.connector\n\nmydb = mysql.connector.connect(\n  host='localhost',\n  user='myusername',\n  password='mypassword',\n  database='mydatabase'\n)\n\ncursor = mydb.cursor()\n\ncursor.execute('SELECT * FROM students')\n\nrecords = cursor.fetchall()\n\nfor record in records:\n  print(record)\n```\n\nWhat does this script do?",
+    "choices": [
+        {
+            "choice": "The script inserts a new record into the 'students' table.",
+            "correct": "false"
+        },
+        {
+            "choice": "The script deletes the 'students' table.",
+            "correct": "false"
+        },
+        {
+            "choice": "The script fetches all the records from the 'students' table and prints them.",
+            "correct": "true"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "question": "Fill in the blank: Given the following code snippet in Python, replace the blank to iterate over the list and print the numbers.\n```python\nnumbers = [1, 2, 3, 4, 5]\nfor ______ in numbers:\n    print(num)\n```",
+    "choices": [
+        {
+            "choice": "item",
+            "correct": "false"
+        },
+        {
+            "choice": "num",
+            "correct": "true"
+        },
+        {
+            "choice": "value",
+            "correct": "false"
+        }
+    ]
+}

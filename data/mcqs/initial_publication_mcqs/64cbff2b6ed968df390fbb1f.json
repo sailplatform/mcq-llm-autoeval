@@ -1,0 +1,25 @@
+{
+    "question": "What will be the output of the following code snippet?\n\n```python\ntup = ('Spring', 'Summer', 'Fall', '?')\nlis = list(tup)\nlis[3] = 'Winter'\ntup = tuple(lis)\nprint('| ', end='')\nfor item in tup:\n    print(item, end=' | ')\nprint()\n```",
+    "choices": [
+        {
+            "choice": "`| Spring | Summer | Fall | Winter |`",
+            "correct": "true"
+        },
+        {
+            "choice": "`| Spring | Summer | Fall | ? |`",
+            "correct": "false"
+        },
+        {
+            "choice": "`| Spring | Summer | Fall |`",
+            "correct": "false"
+        },
+        {
+            "choice": "`| Spring |`",
+            "correct": "false"
+        },
+        {
+            "choice": "Nothing. This program would raise an error.",
+            "correct": "false"
+        }
+    ]
+}

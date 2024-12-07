@@ -1,0 +1,17 @@
+{
+    "question": "Take a look at the snippet and choose one of the following statements which is true:\n\n```python\nnums = []\nvals = nums\nvals.append(1)\n```",
+    "choices": [
+        {
+            "choice": "`nums` and `vals` are of the same length",
+            "correct": "true"
+        },
+        {
+            "choice": "`nums` is linger than `vals`",
+            "correct": "false"
+        },
+        {
+            "choice": "`vals` is longer than `nums`",
+            "correct": "false"
+        }
+    ]
+}

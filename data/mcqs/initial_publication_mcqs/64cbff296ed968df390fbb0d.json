@@ -1,0 +1,21 @@
+{
+    "question": "What will be the output of the following code snippet?\n\n```python\nplaces = ['Ohio', 'Northern Mariana Islands', 'Maine', 'Florida']\nmystery = ['a', 'b']\n\nmystery[0] = places[0][1:3]\nmystery[1] = places[1][3:7]\nplaces.pop()\nmystery[1] = mystery[1] + places[2][-1]\n\nfor x in mystery:\n    print(x)\n```",
+    "choices": [
+        {
+            "choice": "`hi\\nthere`",
+            "correct": "true"
+        },
+        {
+            "choice": "`Oh\\nMaine`",
+            "correct": "false"
+        },
+        {
+            "choice": "`Oh\\nNorth`",
+            "correct": "false"
+        },
+        {
+            "choice": "`hi\\nthen`",
+            "correct": "false"
+        }
+    ]
+}

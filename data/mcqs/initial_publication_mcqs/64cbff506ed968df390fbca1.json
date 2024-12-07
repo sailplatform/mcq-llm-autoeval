@@ -1,0 +1,21 @@
+{
+    "question": "PyPI is often refered to as:",
+    "choices": [
+        {
+            "choice": "pyPI (as pie)",
+            "correct": "false"
+        },
+        {
+            "choice": "Python Play",
+            "correct": "false"
+        },
+        {
+            "choice": "Py Software Store",
+            "correct": "false"
+        },
+        {
+            "choice": "Cheese Shop",
+            "correct": "true"
+        }
+    ]
+}

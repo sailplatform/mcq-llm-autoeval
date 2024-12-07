@@ -1,0 +1,17 @@
+{
+    "question": "Analyze the following Python code and select the best description:",
+    "choices": [
+        {
+            "choice": "The code creates a function definition called 'maskout' without any arguments. It calls the function 'maskout' using 'abc' as an argument.",
+            "correct": "false"
+        },
+        {
+            "choice": "The code creates a function call called 'maskout' with the parameter 's'. It defines the function 'maskout' using 'abc' as a parameter.",
+            "correct": "false"
+        },
+        {
+            "choice": "The code creates a function definition called 'maskout' with the parameter 's'. It calls the function 'maskout' using 'abc' as an argument.",
+            "correct": "true"
+        }
+    ]
+}

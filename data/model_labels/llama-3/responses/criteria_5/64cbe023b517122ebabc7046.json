@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are a learning engineer support bot focused on evaluating the quality of multiple-choice question assessments.\n\nA multiple-choice question is a collection of three components aimed at testing a student\u2019s understanding of a certain topic, given a particular context of what the student is expected to know. The three components of a multiple-choice question are as follows: a Stem, a Correct Answer, and two Distractors. There must always be only one correct answer and only two distractors.\nThe stem refers to the question the student will attempt to answer, as well as the relevant context necessary in order to answer the question. It may be in the form of a question, an incomplete statement, or a scenario. The stem should focus on assessing the specific knowledge or concept the question aims to evaluate.\n\nThe Correct Answer refers to the correct, undisputable answer to the question in the stem.\n\nA Distractor is an incorrect answer to the question in the stem.\n\nThe term \u201canswer choices\u201d is a phrase that refers to a grouping of the two distractors as well as the correct answer. A single \u201canswer choice\u201d refers to only one of the distractors or the correct answer. The answer choices should be homogeneous and parallel in format, such that they are of similar length and structure.\n\nMultiple-choice questions will be provided as JSON objects as follows.\n{\n    \"question\": \"<QUESTION_TEXT>\",\n    \"choices\": [\n        {\n            \"choice\": \"<CHOICE_TEXT>\",\n            \"correct\": <TRUE/FALSE>\n        },\n        {\n            \"choice\": \"<CHOICE_TEXT>\",\n            \"correct\": <TRUE/FALSE>\n        },\n        {\n            \"choice\": \"<CHOICE_TEXT>\",\n            \"correct\": <TRUE/FALSE>\n        }\n    ]\n}\n\nWhen evaluating a question, first try answering it from the perspective of a student who is familiar with Python programming.\n"
+    },
+    {
+        "role": "user",
+        "content": "Here is a multiple-choice question in JSON format.\n{\n    \"question\": \"Liam is a Data Scientist working with a dataset about U.S. city populations over the past decade. He wants to use python's pandas library to handle this data but is unsure about which data structure to use: the Series or the DataFrame. He describes the dataset: It has records for each year over the past 10 years for each U.S. city. Each record contains the city name, state, and population for that year. Which pandas data structure should Liam use to handle this data?\",\n    \"choices\": [\n        {\n            \"choice\": \"He should use a Series because a Series can hold any one-dimensional labelled data.\",\n            \"correct\": \"false\"\n        },\n        {\n            \"choice\": \"He should use a DataFrame because it can hold two-dimensional labeled data and would allow him to easily manipulate and analyze the data.\",\n            \"correct\": \"true\"\n        },\n        {\n            \"choice\": \"He should create multiple Series, one for each city.\",\n            \"correct\": \"false\"\n        }\n    ]\n}\n\nDoes the question contain any code? Is the code syntactically and logically correct?"
+    },
+    {
+        "role": "assistant",
+        "content": "No, the question does not contain any code. It is a multiple-choice question that asks about the pandas data structure that Liam should use to handle the dataset."
+    },
+    {
+        "role": "user",
+        "content": "Based on your assesment, evaluate the options in this multiple-choice question using this principle.\n\nPrinciple:\nIf there is a code block present in the question or the answer choices, you need to identify if the code is syntactically and logically correct. This principle can be evaluated as one of the following four options, label the evaluations as options 1 through 4.\n1: The code is syntactically and logically correct\n2: There are minor syntax/logical issues\n3: The code in incomprehensible\n4: There is no code in the question\n\nWhen asked to evaluate a question, return the evaluation key. Nothing else!"
+    },
+    {
+        "role": "assistant",
+        "content": "4"
+    }
+]

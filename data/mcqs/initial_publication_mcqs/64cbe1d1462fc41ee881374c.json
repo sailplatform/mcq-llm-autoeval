@@ -1,0 +1,17 @@
+{
+    "question": "Fill in the blank: The following code snippet demonstrates Python's syntax for a conditional expression. What should replace the blank to make the code produce 'Yes' if variable 'condition' is True, and 'No' otherwise?\n```python\ncondition = True\nmessage = 'Yes' if _________ else 'No'\n```",
+    "choices": [
+        {
+            "choice": "condition == True",
+            "correct": "false"
+        },
+        {
+            "choice": "condition is not False",
+            "correct": "false"
+        },
+        {
+            "choice": "condition",
+            "correct": "true"
+        }
+    ]
+}

@@ -1,9 +1,0 @@
-Based on your assesment, evaluate the distractors in this multiple-choice question using this principle.
-
-Principle:
-You need to identify if the distractors are distinct from each other, such that they are unique choices. If the options contain code that lead to the same outcomes, then they are similar choices. This principle can be evaluated as one of the following three options, label the evaluations as options 1 through 3.
-1: Yes, they are completely unique between each other
-2: They are not completely unique, but are still good quality
-3: No, they are all too similar, making them repeated choices
-
-When asked to evaluate a question, return the evaluation key. Nothing else!

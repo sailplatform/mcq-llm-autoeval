@@ -1,0 +1,25 @@
+{
+    "question": "Which of the below listed rules are violated by the XML sample below?\n\n```xml\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<! -- List of books \u00e2\u20ac\u201c- >.\n<book id=1>\n    <title>Utopia</title>\n    <author>Sir Thomas More</author>\n    <publishDate>1516</publishDate>\n</book>\n<book id=2>\n    <Title>Time Machine</Title>\n    <publishDate>1895</publishDate>\n    <author>H.G. Wells</author>\n</book>\n```\n\n1. XML declaration\n2. Tree structure and proper nesting\n3. Use of tag pairs\n4. Naming of tags\n5. Use of attributes\n6. Use of reserved characters\n7. Use of comments\n8. Ordering of elements",
+    "choices": [
+        {
+            "choice": "2, 3 and 8",
+            "correct": "false"
+        },
+        {
+            "choice": "1, 7 and 8",
+            "correct": "false"
+        },
+        {
+            "choice": "2, 7 and 8",
+            "correct": "false"
+        },
+        {
+            "choice": "2, 4, 5 and 6",
+            "correct": "false"
+        },
+        {
+            "choice": "2, 4, 5 and 7",
+            "correct": "true"
+        }
+    ]
+}

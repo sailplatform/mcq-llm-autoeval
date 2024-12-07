@@ -1,0 +1,10 @@
+Based on your assesment, evaluate the options in this multiple-choice question using this principle.
+
+Principle:
+If there is a code block present in the question or the answer choices, you need to identify if the code is syntactically and logically correct. This principle can be evaluated as one of the following four options, label the evaluations as options 1 through 4.
+1: The code is syntactically and logically correct
+2: There are minor syntax/logical issues
+3: The code in incomprehensible
+4: There is no code in the question
+
+When asked to evaluate a question, return the evaluation key. Nothing else!

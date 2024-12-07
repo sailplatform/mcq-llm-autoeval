@@ -1,0 +1,21 @@
+{
+    "question": "What is the output of the following snippet?\n\n```python\nz = y = x = 1\nprint(x, y, z, sep='*')\n```",
+    "choices": [
+        {
+            "choice": "`1*1*1`",
+            "correct": "true"
+        },
+        {
+            "choice": "`1 1 1`",
+            "correct": "false"
+        },
+        {
+            "choice": "`x*y*z`",
+            "correct": "false"
+        },
+        {
+            "choice": "`x y z`",
+            "correct": "false"
+        }
+    ]
+}

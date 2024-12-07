@@ -1,0 +1,21 @@
+{
+    "question": "Look at the code below:\n\n```python\nimport random\n\n#\n# Insert lines of code here.\n#\n\nprint(a, b, c)\n```\n\nWhich lines of code would you insert so that it is possible for the program to output the following result:\n\n```\n6 82 0\n```\n\nOption 1:\n    \n```python\na = random.randint(0, 100)\nb = random.randrange(10, 100, 3)\nc = random.choice((0, 100, 3))\n```\n\nOption 2:\n\n```python\na = random.randint(0, 100)\nb = random.choice((0, 100, 3))\nc = random.randrange(10, 100, 3)\n```\n\nOption 3:\n\n```python\na = random.randrange(10, 100, 3)\nb = random.randint(0, 100)\nc = random.choice((0, 100, 3))\n```\n\nOption 4:\n\n```python\na = random.choice((0, 100, 3))\nb = random.randrange(10, 100, 3)\nc = random.randint(0, 100)\n```",
+    "choices": [
+        {
+            "choice": "Option 1",
+            "correct": "false"
+        },
+        {
+            "choice": "Option 2",
+            "correct": "false"
+        },
+        {
+            "choice": "Option 3",
+            "correct": "true"
+        },
+        {
+            "choice": "Option 4",
+            "correct": "false"
+        }
+    ]
+}

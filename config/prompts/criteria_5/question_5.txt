@@ -1,0 +1,4 @@
+Here is a multiple-choice question in JSON format.
+{QUESTION}
+
+Does the question contain any code? Is the code syntactically and logically correct?

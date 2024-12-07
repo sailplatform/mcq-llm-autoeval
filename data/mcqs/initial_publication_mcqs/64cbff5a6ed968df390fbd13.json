@@ -1,0 +1,17 @@
+{
+    "question": "What happens if you run the following code, assuming that the `d` directory already exists?\n\n```python\nimport os\nos.mkdir(\"a/b/c/d\")\n```",
+    "choices": [
+        {
+            "choice": "A `DirectoryExistsError` exception is raised",
+            "correct": "false"
+        },
+        {
+            "choice": "A `FileExistsError` exception is raised",
+            "correct": "true"
+        },
+        {
+            "choice": "Python will overwrite the existing directory",
+            "correct": "false"
+        }
+    ]
+}

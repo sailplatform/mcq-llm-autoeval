@@ -1,0 +1,17 @@
+{
+    "question": "What is the key characteristic of bubble-sort algorithm while sorting a list in python?",
+    "choices": [
+        {
+            "choice": "Bubble-sort algorithm does comparisons and swaps until the list is sorted.",
+            "correct": "true"
+        },
+        {
+            "choice": "Bubble-sort algorithm sorts the list by swapping elements in pairs from beginning to end of list in one pass.",
+            "correct": "false"
+        },
+        {
+            "choice": "Bubble-sort algorithm sorts the list in one complete single pass without multiple iterations.",
+            "correct": "false"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "question": "Liam is a Data Scientist working with a dataset about U.S. city populations over the past decade. He wants to use python's pandas library to handle this data but is unsure about which data structure to use: the Series or the DataFrame. He describes the dataset: It has records for each year over the past 10 years for each U.S. city. Each record contains the city name, state, and population for that year. Which pandas data structure should Liam use to handle this data?",
+    "choices": [
+        {
+            "choice": "He should use a Series because a Series can hold any one-dimensional labelled data.",
+            "correct": "false"
+        },
+        {
+            "choice": "He should use a DataFrame because it can hold two-dimensional labeled data and would allow him to easily manipulate and analyze the data.",
+            "correct": "true"
+        },
+        {
+            "choice": "He should create multiple Series, one for each city.",
+            "correct": "false"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "question": "It is easy to learn how to write clean code.",
+    "choices": [
+        {
+            "choice": "True",
+            "correct": "true"
+        },
+        {
+            "choice": "False",
+            "correct": "false"
+        }
+    ]
+}

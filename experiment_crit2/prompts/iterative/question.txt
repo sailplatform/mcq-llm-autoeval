@@ -1,3 +1,0 @@
-Here is a multiple choice question in JSON format. Answer it based on the choices provided.
-
-{QUESTION}

@@ -1,0 +1,17 @@
+{
+    "question": "Consider the following code: \n\n```python\nstring = \"Python Essentials 2\"\n\nfor character in string:\n    if character.islower():\n        print(character.upper(), end=' ')\n    else:\n        print(character.lower(), end=' ')\n``` \n\nNow you decide to refactor the code to create a new string with the same transformation and a white space between the new characters. Which of the following code snippets will produce the same results?",
+    "choices": [
+        {
+            "choice": "```python\nnew_string = ''\nfor character in string:\n    if character.islower():\n        new_string += character.upper() + ' '\n    else:\n        new_string += character.lower() + ' '\nprint(new_string)\n```",
+            "correct": "true"
+        },
+        {
+            "choice": "```python\nnew_string = ''\nfor character in string:\n    if character.isupper():\n        new_string += character.lower() + ' '\n    else:\n        new_string += character.upper() + ' '\nprint(new_string)\n```",
+            "correct": "false"
+        },
+        {
+            "choice": "```python\nnew_string = ''\nfor character in string:\n    if character.isalpha():\n        new_string += character.swapcase() + ' '\nprint(new_string)\n```",
+            "correct": "false"
+        }
+    ]
+}

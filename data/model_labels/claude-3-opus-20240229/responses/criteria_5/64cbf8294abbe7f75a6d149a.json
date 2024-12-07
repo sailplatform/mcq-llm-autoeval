@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are a learning engineer support bot focused on evaluating the quality of multiple-choice question assessments.\n\nA multiple-choice question is a collection of three components aimed at testing a student's understanding of a certain topic, given a particular context of what the student is expected to know. The three components of a multiple-choice question are as follows: a Stem, a Correct Answer, and two Distractors. There must always be only one correct answer and only two distractors.\nThe stem refers to the question the student will attempt to answer, as well as the relevant context necessary in order to answer the question. It may be in the form of a question, an incomplete statement, or a scenario. The stem should focus on assessing the specific knowledge or concept the question aims to evaluate.\n\nThe Correct Answer refers to the correct, undisputable answer to the question in the stem.\n\nA Distractor is an incorrect answer to the question in the stem.\n\nThe term \"answer choices\" is a phrase that refers to a grouping of the two distractors as well as the correct answer. A single \"answer choice\" refers to only one of the distractors or the correct answer. The answer choices should be homogeneous and parallel in format, such that they are of similar length and structure.\n\nMultiple-choice questions will be provided as JSON objects as follows.\n{\n    \"question\": \"<QUESTION_TEXT>\",\n    \"choices\": [\n        {\n            \"choice\": \"<CHOICE_TEXT>\",\n            \"correct\": <TRUE/FALSE>\n        },\n        {\n            \"choice\": \"<CHOICE_TEXT>\",\n            \"correct\": <TRUE/FALSE>\n        },\n        {\n            \"choice\": \"<CHOICE_TEXT>\",\n            \"correct\": <TRUE/FALSE>\n        }\n    ]\n}\n\nWhen evaluating a question, first try answering it from the perspective of a student who is familiar with Python programming.\n"
+    },
+    {
+        "role": "user",
+        "content": "Here is a multiple-choice question in JSON format.\n{\n    \"question\": \"Given a list of integers, numbers = [3, 4, 5, 7, 8, 10, 13]. What will be the output of \\n```python\\nnumbers.remove(7)\\nprint(numbers)\\n```\",\n    \"choices\": [\n        {\n            \"choice\": \"[3, 4, 5, 7, 8, 10, 13]\",\n            \"correct\": \"false\"\n        },\n        {\n            \"choice\": \"[3, 4, 5, 8, 10, 13]\",\n            \"correct\": \"true\"\n        },\n        {\n            \"choice\": \"[3, 4, 5, 8, 10, 13, 7]\",\n            \"correct\": \"false\"\n        }\n    ]\n}\n\nDoes the question contain any code? Is the code syntactically and logically correct?"
+    },
+    {
+        "role": "assistant",
+        "content": "Yes, the question contains a code snippet in Python. The code is syntactically correct. Here's the breakdown:\n\n```python\nnumbers = [3, 4, 5, 7, 8, 10, 13]  # Initializing a list of integers\nnumbers.remove(7)                  # Removing the element 7 from the list\nprint(numbers)                     # Printing the updated list\n```\n\nThe code is also logically correct. The `remove()` method removes the first occurrence of the specified element from the list. In this case, it removes the element `7` from the `numbers` list.\n\nAfter executing the code, the output will be:\n```\n[3, 4, 5, 8, 10, 13]\n```\n\nThe correct answer is indeed \"[3, 4, 5, 8, 10, 13]\", which is marked as the correct choice in the provided JSON."
+    },
+    {
+        "role": "user",
+        "content": "Based on your assesment, evaluate the options in this multiple-choice question using this principle.\n\nPrinciple:\nIf there is a code block present in the question or the answer choices, you need to identify if the code is syntactically and logically correct. This principle can be evaluated as one of the following four options, label the evaluations as options 1 through 4.\n1: The code is syntactically and logically correct\n2: There are minor syntax/logical issues\n3: The code in incomprehensible\n4: There is no code in the question\n\nWhen asked to evaluate a question, return the evaluation key. Nothing else!"
+    },
+    {
+        "role": "assistant",
+        "content": "1"
+    }
+]

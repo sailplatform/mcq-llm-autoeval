@@ -1,0 +1,17 @@
+{
+    "question": "Consider the following Python function: \\n\\n```python\\ndef average(num1, num2):\\n    return (num1 + num2) / 2\\n```\\n\\nWhat will be the output if we call the function with the arguments `num1 = 3.5` and `num2 = 4`?",
+    "choices": [
+        {
+            "choice": "3.5",
+            "correct": "false"
+        },
+        {
+            "choice": "3.75",
+            "correct": "true"
+        },
+        {
+            "choice": "7.5",
+            "correct": "false"
+        }
+    ]
+}

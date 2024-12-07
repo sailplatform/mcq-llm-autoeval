@@ -1,0 +1,17 @@
+{
+    "question": "What will be the output of the following Python code?\n```python\nvar = 5\nresult = (var << 1) & var\nprint(result)\n```",
+    "choices": [
+        {
+            "choice": "5",
+            "correct": "false"
+        },
+        {
+            "choice": "10",
+            "correct": "false"
+        },
+        {
+            "choice": "0",
+            "correct": "true"
+        }
+    ]
+}

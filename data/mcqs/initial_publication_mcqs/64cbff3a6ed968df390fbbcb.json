@@ -1,0 +1,21 @@
+{
+    "question": "The `\\n` digraph forces the `print()` function to:",
+    "choices": [
+        {
+            "choice": "duplicate the character next to the digraph",
+            "correct": "false"
+        },
+        {
+            "choice": "break the output line",
+            "correct": "true"
+        },
+        {
+            "choice": "output exactly two characters: `\\` and `n`",
+            "correct": "false"
+        },
+        {
+            "choice": "stop its execution",
+            "correct": "false"
+        }
+    ]
+}

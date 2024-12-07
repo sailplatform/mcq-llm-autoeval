@@ -1,0 +1,17 @@
+{
+    "question": "Oliver is a data analyst who is new to Python. At his job, he often needs to work with client names in different datasets, but he is facing a problem. The client names in different datasets are not consistent. For example, 'John Smith' might be represented as 'Smith, John' or 'SMITH JOHN'. He wants to standardize the names across all datasets using Python.\\n\\nWhat would be the most effective way for Oliver to standardize the client names in Python based on his requirements?",
+    "choices": [
+        {
+            "choice": "Use the replace method of strings in Python to replace all spaces and commas with empty strings.",
+            "correct": "false"
+        },
+        {
+            "choice": "Use the lower and split methods of strings in Python to convert all letters to lowercase and split the names, then use the join method to join the split names in a standard way.",
+            "correct": "true"
+        },
+        {
+            "choice": "Use the upper method of strings in Python to convert all letters to uppercase.",
+            "correct": "false"
+        }
+    ]
+}

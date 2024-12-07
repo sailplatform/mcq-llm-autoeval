@@ -1,0 +1,17 @@
+{
+    "question": "Fill in the blank: A team member wrote the following Python code for a project. It's working as expected, but it's too complex and takes too long to run for larger inputs. You decide to optimize it using a standard Python module that could solve the problem more efficiently. Which module should replace the blank?\n```python\nimport ______ as np\n\n# The current slow running function\ndef calculate_median(lst):\n    sorted_lst = sorted(lst)\n    list_length = len(lst)\n    num = list_length // 2\n    if list_length % 2 == 0:\n        return (sorted_lst[num - 1] + sorted_lst[num]) / 2\n    else:\n        return sorted_lst[num]\n\n# The efficient function using the module\ndef calculate_median_efficiently(lst):\n    return np.median(lst)\n```",
+    "choices": [
+        {
+            "choice": "matplotlib",
+            "correct": "false"
+        },
+        {
+            "choice": "math",
+            "correct": "false"
+        },
+        {
+            "choice": "numpy",
+            "correct": "true"
+        }
+    ]
+}

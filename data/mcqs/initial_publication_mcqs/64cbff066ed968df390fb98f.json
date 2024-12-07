@@ -1,0 +1,21 @@
+{
+    "question": "If we wanted to add a stop method for our Fish class in the code snippet below, which of the Methods listed below would be the most appropriate?\n\n```python\nfrom random import randint\n\nclass Fish:    \n    def __init__(self, f_name, f_type, f_speed=0):\n        self.name = f_name         # fish name\n        self.fish_type = f_type    # fish type\n        self.x = randint(10, 100)  # random x coordinate of its location  \n        self.y = randint(10, 100)  # random y coordinate of its location\n        self.dx = f_speed         # horizontal displacement per unit time (speed)\n        self.rightwards = f_speed > 0    # rightwards orientation of fish\n\nfish1 = Fish('Nemo', 'clownfish', 30)                   # Line 1\nfish2 = Fish('Dory', 'royal blue tang', -20)            # Line 2\nfish3 = Fish('Nemo', 'clownfish', 30)                   # Line 3\nfish4 = Fish('Sandy', 'clownfish')                      # Line 4\nfish5 = Fish('Sandy', f_speed=40, f_type='clownfish')   # Line 5\nfish6 = Fish('Sandy', f_speed=40)                       # Line 6\n```\n\nMethod 1:\n```python\ndef stop(self):\n    self.swim()\n    self.dx = 0\n```\n\nMethod 2:\n```python\ndef stop(steps=1):\n    self.dx = 0\n    for i in range (steps):\n        self.swim()\n```\n\nMethod 3:\n```python\ndef stop(self, steps=1):\n    self.dx = 0\n    for i in range (steps):\n        self.swim()\n```\n\nMethod 4:\n```python\ndef stop(self):\n    self.dx = 0\n```",
+    "choices": [
+        {
+            "choice": "Method 1",
+            "correct": "false"
+        },
+        {
+            "choice": "Method 2",
+            "correct": "false"
+        },
+        {
+            "choice": "Method 3",
+            "correct": "false"
+        },
+        {
+            "choice": "Method 4",
+            "correct": "true"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "question": "Fill in the blank: The following Python code snippet illustrates the basic operation of retrieving data from a hypothetical in-memory key-value store. Which function should replace the blank to fetch data associated with a specific key?\n```python\nstore = HypotheticalKeyValueStore()\nstore.______('exampleKey')\n```",
+    "choices": [
+        {
+            "choice": "get",
+            "correct": "true"
+        },
+        {
+            "choice": "receive",
+            "correct": "false"
+        },
+        {
+            "choice": "request",
+            "correct": "false"
+        }
+    ]
+}

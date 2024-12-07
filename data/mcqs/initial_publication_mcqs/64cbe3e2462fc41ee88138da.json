@@ -1,0 +1,17 @@
+{
+    "question": "Fill in the blank: The following code snippet calculates the total sales by group. In Pandas, what method should replace the blank to achieve this? \n```python\nimport pandas as pd\n\nsales_data = {\n  'Company': ['ABC', 'ABC', 'DEF', 'DEF', 'GHI', 'GHI'],\n  'Sales': [100, 200, 300, 400, 500, 600]\n}\n\ndf = pd.DataFrame(sales_data)\n\nsales_by_company = df.______('Company')['Sales'].sum()\n```",
+    "choices": [
+        {
+            "choice": "groupby",
+            "correct": "true"
+        },
+        {
+            "choice": "combineby",
+            "correct": "false"
+        },
+        {
+            "choice": "mergeby",
+            "correct": "false"
+        }
+    ]
+}

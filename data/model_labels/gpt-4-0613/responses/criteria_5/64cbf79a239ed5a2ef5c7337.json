@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are a learning engineer support bot focused on evaluating the quality of multiple-choice question assessments.\n\nA multiple-choice question is a collection of three components aimed at testing a student\u2019s understanding of a certain topic, given a particular context of what the student is expected to know. The three components of a multiple-choice question are as follows: a Stem, a Correct Answer, and two Distractors. There must always be only one correct answer and only two distractors.\nThe stem refers to the question the student will attempt to answer, as well as the relevant context necessary in order to answer the question. It may be in the form of a question, an incomplete statement, or a scenario. The stem should focus on assessing the specific knowledge or concept the question aims to evaluate.\n\nThe Correct Answer refers to the correct, undisputable answer to the question in the stem.\n\nA Distractor is an incorrect answer to the question in the stem.\n\nThe term \u201canswer choices\u201d is a phrase that refers to a grouping of the two distractors as well as the correct answer. A single \u201canswer choice\u201d refers to only one of the distractors or the correct answer. The answer choices should be homogeneous and parallel in format, such that they are of similar length and structure.\n\nMultiple-choice questions will be provided as JSON objects as follows.\n{\n    \"question\": \"<QUESTION_TEXT>\",\n    \"choices\": [\n        {\n            \"choice\": \"<CHOICE_TEXT>\",\n            \"correct\": <TRUE/FALSE>\n        },\n        {\n            \"choice\": \"<CHOICE_TEXT>\",\n            \"correct\": <TRUE/FALSE>\n        },\n        {\n            \"choice\": \"<CHOICE_TEXT>\",\n            \"correct\": <TRUE/FALSE>\n        }\n    ]\n}\n\nWhen evaluating a question, first try answering it from the perspective of a student who is familiar with Python programming.\n"
+    },
+    {
+        "role": "user",
+        "content": "Here is a multiple-choice question in JSON format.\n{\n    \"question\": \"Consider the following code snippet:\\n\\n```python\\ndef add_numbers(a, b):\\n    return a + b\\n\\nresult = add_numbers(4, 5)\\nprint(result)\\n```\\nWhat will be printed to the console?\",\n    \"choices\": [\n        {\n            \"choice\": \"4\",\n            \"correct\": \"false\"\n        },\n        {\n            \"choice\": \"5\",\n            \"correct\": \"false\"\n        },\n        {\n            \"choice\": \"9\",\n            \"correct\": \"true\"\n        }\n    ]\n}\n\nDoes the question contain any code? Is the code syntactically and logically correct?"
+    },
+    {
+        "role": "assistant",
+        "content": "Yes, the question does contain code. The code is both syntactically and logically correct. It defines a function `add_numbers` that takes two arguments, adds them together, and returns the result. Then it calls this function with the arguments 4 and 5, stores the result in a variable, and prints the result. The output of this code will be 9, which is correctly identified as the correct answer in the provided choices."
+    },
+    {
+        "role": "user",
+        "content": "Based on your assesment, evaluate the options in this multiple-choice question using this principle.\n\nPrinciple:\nIf there is a code block present in the question or the answer choices, you need to identify if the code is syntactically and logically correct. This principle can be evaluated as one of the following four options, label the evaluations as options 1 through 4.\n1: The code is syntactically and logically correct\n2: There are minor syntax/logical issues\n3: The code in incomprehensible\n4: There is no code in the question\n\nWhen asked to evaluate a question, return the evaluation key. Nothing else!"
+    },
+    {
+        "role": "assistant",
+        "content": "1"
+    }
+]

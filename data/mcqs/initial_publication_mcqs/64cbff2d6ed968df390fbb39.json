@@ -1,0 +1,29 @@
+{
+    "question": "What is the output of the following code if the user enters a 0?\n\n```python\ntry:\n    value = input(\"Enter a value: \")\n    print(int(value)/len(value))\nexcept ValueError:\n    print(\"Bad input...\")\nexcept ZeroDivisionError:\n    print(\"Very bad input...\")\nexcept TypeError:\n    print(\"Very very bad input...\")\nexcept(\"Booo!\")\n```",
+    "choices": [
+        {
+            "choice": "0.0",
+            "correct": "true"
+        },
+        {
+            "choice": "Booo!",
+            "correct": "false"
+        },
+        {
+            "choice": "Very bad input...",
+            "correct": "false"
+        },
+        {
+            "choice": "1.0",
+            "correct": "false"
+        },
+        {
+            "choice": "Very very bad input...",
+            "correct": "false"
+        },
+        {
+            "choice": "Bad input...",
+            "correct": "false"
+        }
+    ]
+}

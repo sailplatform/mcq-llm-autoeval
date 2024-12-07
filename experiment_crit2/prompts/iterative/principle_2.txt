@@ -1,9 +1,0 @@
-Based on this principle, how would you evaluate this question?
-Principle:
-You need to identify if among all the answer choices listed for the multiple choice question, there is a choice that is factually correct, AND the same answer choice is also marked correctly in the answer key. This principle can be evaluated as one of the following four options, label the evaluations as options 1 through 4.
-1: There is a correct answer and it is marked correct
-2: There is a correct answer but it is not marked correct
-3: There are multiple correct answers
-4: There is no correct answer
-
-Return only the evaluation key, nothing else

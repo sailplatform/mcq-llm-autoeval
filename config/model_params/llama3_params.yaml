@@ -1,0 +1,5 @@
+model: meta-llama/Meta-Llama-3-8B-Instruct
+
+temperature: 0
+completion_len: 2000
+top_p: 1

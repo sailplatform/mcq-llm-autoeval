@@ -1,0 +1,4 @@
+Here is a multiple-choice question in JSON format.
+{QUESTION}
+
+Is there a factually correct answer to the question listed among the options? Is the answer key correct?

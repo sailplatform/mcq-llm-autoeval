@@ -1,5 +1,0 @@
-CONTEXT
-Here is a multiple-choice question in JSON format.
-{QUESTION}
-
-Evaluate the above question based on the principles that are used to evaluate multiple-choice questions. 

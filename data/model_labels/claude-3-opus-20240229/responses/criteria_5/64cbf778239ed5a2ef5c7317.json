@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are a learning engineer support bot focused on evaluating the quality of multiple-choice question assessments.\n\nA multiple-choice question is a collection of three components aimed at testing a student\u2019s understanding of a certain topic, given a particular context of what the student is expected to know. The three components of a multiple-choice question are as follows: a Stem, a Correct Answer, and two Distractors. There must always be only one correct answer and only two distractors.\nThe stem refers to the question the student will attempt to answer, as well as the relevant context necessary in order to answer the question. It may be in the form of a question, an incomplete statement, or a scenario. The stem should focus on assessing the specific knowledge or concept the question aims to evaluate.\n\nThe Correct Answer refers to the correct, undisputable answer to the question in the stem.\n\nA Distractor is an incorrect answer to the question in the stem.\n\nThe term \u201canswer choices\u201d is a phrase that refers to a grouping of the two distractors as well as the correct answer. A single \u201canswer choice\u201d refers to only one of the distractors or the correct answer. The answer choices should be homogeneous and parallel in format, such that they are of similar length and structure.\n\nMultiple-choice questions will be provided as JSON objects as follows.\n{\n    \"question\": \"<QUESTION_TEXT>\",\n    \"choices\": [\n        {\n            \"choice\": \"<CHOICE_TEXT>\",\n            \"correct\": <TRUE/FALSE>\n        },\n        {\n            \"choice\": \"<CHOICE_TEXT>\",\n            \"correct\": <TRUE/FALSE>\n        },\n        {\n            \"choice\": \"<CHOICE_TEXT>\",\n            \"correct\": <TRUE/FALSE>\n        }\n    ]\n}\n\nWhen evaluating a question, first try answering it from the perspective of a student who is familiar with Python programming.\n"
+    },
+    {
+        "role": "user",
+        "content": "Here is a multiple-choice question in JSON format.\n{\n    \"question\": \"What will be the output of the following Python code?\\n```python\\nvar = 5\\nresult = (var << 1) & var\\nprint(result)\\n```\",\n    \"choices\": [\n        {\n            \"choice\": \"5\",\n            \"correct\": \"false\"\n        },\n        {\n            \"choice\": \"10\",\n            \"correct\": \"false\"\n        },\n        {\n            \"choice\": \"0\",\n            \"correct\": \"true\"\n        }\n    ]\n}\n\nDoes the question contain any code? Is the code syntactically and logically correct?"
+    },
+    {
+        "role": "assistant",
+        "content": "Yes, the question contains Python code. Let's analyze it:\n\n```python\nvar = 5\nresult = (var << 1) & var\nprint(result)\n```\n\nThe code is syntactically correct. It follows the proper Python syntax and will execute without any syntax errors.\n\nLogically, the code is also correct. Here's what it does:\n\n1. It assigns the value 5 to the variable `var`.\n2. It performs a bitwise left shift operation on `var` by 1 position, which effectively multiplies `var` by 2. So, `var << 1` evaluates to 10 (binary: 1010).\n3. It then performs a bitwise AND operation between the result of `var << 1` (which is 10) and the original value of `var` (which is 5).\n   - 10 in binary is 1010\n   - 5 in binary is 0101\n   - Performing a bitwise AND operation between 1010 and 0101 results in 0000, which is 0 in decimal.\n4. Finally, it prints the value of `result`, which is 0.\n\nSo, the code is both syntactically and logically correct, and it will output 0 when executed."
+    },
+    {
+        "role": "user",
+        "content": "Based on your assesment, evaluate the options in this multiple-choice question using this principle.\n\nPrinciple:\nIf there is a code block present in the question or the answer choices, you need to identify if the code is syntactically and logically correct. This principle can be evaluated as one of the following four options, label the evaluations as options 1 through 4.\n1: The code is syntactically and logically correct\n2: There are minor syntax/logical issues\n3: The code in incomprehensible\n4: There is no code in the question\n\nWhen asked to evaluate a question, return the evaluation key. Nothing else!"
+    },
+    {
+        "role": "assistant",
+        "content": "1"
+    }
+]

@@ -1,0 +1,17 @@
+{
+    "question": "Suppose we have the following base code:\n```python\nclass MyString:\n    def __init__(self, string):\n        self.__string = string\n\n    def __getitem__(self, index):\n        return self.__string[index]\n\n    def __len__(self):\n        return len(self.__string)\n```\nImplement a new method ```insert(self, index, char)``` for the class MyString. This method should insert a new character at a specific index in the string. After calling the insert method, when we call the __getitem__(index) it should return the inserted character at that index and __len__() should return the new length of the string. Which of the following implementation of insert method is correct?",
+    "choices": [
+        {
+            "choice": "```python\ndef insert(self, index, char):\n    self.__string = self.__string[:index] + char + self.__string[index:]\n```",
+            "correct": "false"
+        },
+        {
+            "choice": "```python\ndef insert(self, index, char):\n    self.__string[index] = char\n```",
+            "correct": "false"
+        },
+        {
+            "choice": "```python\ndef insert(self, index, char):\n    list_string = list(self.__string)\n    list_string.insert(index, char)\n    self.__string = ''.join(list_string)\n```",
+            "correct": "true"
+        }
+    ]
+}

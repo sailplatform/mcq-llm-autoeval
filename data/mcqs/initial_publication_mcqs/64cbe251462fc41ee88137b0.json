@@ -1,0 +1,17 @@
+{
+    "question": "Lucy has developed an application that collects data from various users and stores them in separate data structures. She uses Lists for storing usernames, Tuples for storing user security questions and answers, Sets for storing unique usernames, and Dictionaries for storing user profiles with attributes such as name, email, and password. When a user forgets their password, the application is supposed to prompt the user with their security question, compare the user's answer with the data stored, and if it matches, send an email to the user's email address stored in their profile. Which combination of operations on these data structures should Lucy use to achieve this?",
+    "choices": [
+        {
+            "choice": "Tuple: Retrieve item using index; Set: Check if item exists; Dictionary: Retrieve value using key; List: Append item.",
+            "correct": "false"
+        },
+        {
+            "choice": " Tuple: Retrieve item using index; Set: Add item; Dictionary: Retrieve value using key; List: Check if item exists.",
+            "correct": "false"
+        },
+        {
+            "choice": "Dictionary: Retrieve value using key; Tuple: Retrieve item using index; List: Check if item exists; Set: Check if item exists.",
+            "correct": "true"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "question": "What will be the output of the following Python code?\n\n```python\noutput = ''\n\nfor i in range(5):\n    for j in range(i):\n        output = output + '* '\n    output = output + '\\n'\nprint(output)\n```",
+    "choices": [
+        {
+            "choice": "\n* \n* * \n* * * \n* * * * \n* * * * * \n",
+            "correct": "true"
+        },
+        {
+            "choice": "* \n* * \n* * * \n* * * * \n",
+            "correct": "false"
+        },
+        {
+            "choice": "\n\n* \n* * \n* * * \n* * * * ",
+            "correct": "false"
+        }
+    ]
+}

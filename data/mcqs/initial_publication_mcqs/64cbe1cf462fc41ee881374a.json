@@ -1,0 +1,17 @@
+{
+    "question": "Emily is working on a Python application to analyze customer reviews for her shop. She realizes some of the reviews contain inappropriate language and needs a way to track and flag these. She decides to create a list of inappropriate words and a function that accepts a string (customer review) and a list of those words. If the review contains any inappropriate word, the function should return True, otherwise, it should return False.\\n\\nWhich of the following function implementations would correctly achieve Emily's goal?",
+    "choices": [
+        {
+            "choice": "def check_inappropriate(review, inappropriate_words):\n    for word in inappropriate_words:\n        if word in review:\n            return True\n    return False",
+            "correct": "false"
+        },
+        {
+            "choice": "def check_inappropriate(review, inappropriate_words):\n    for word in inappropriate_words:\n        if word == review:\n            return True\n    return False",
+            "correct": "false"
+        },
+        {
+            "choice": "def check_inappropriate(review, inappropriate_words):\n    return any(word in review for word in inappropriate_words)",
+            "correct": "true"
+        }
+    ]
+}

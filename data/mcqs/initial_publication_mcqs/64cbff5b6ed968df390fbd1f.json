@@ -1,0 +1,17 @@
+{
+    "question": "Which of the approachable `except:` branches is taken into consideration when an exception occurs?",
+    "choices": [
+        {
+            "choice": "any of the matching branches",
+            "correct": "false"
+        },
+        {
+            "choice": "the last matching branch",
+            "correct": "false"
+        },
+        {
+            "choice": "the first matching branch",
+            "correct": "true"
+        }
+    ]
+}

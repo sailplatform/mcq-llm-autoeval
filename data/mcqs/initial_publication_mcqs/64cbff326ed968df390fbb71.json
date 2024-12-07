@@ -1,0 +1,21 @@
+{
+    "question": "The following snippet:\n\n```python\ndef func(a, b):\n    return a ** b\n\nprint(func(2))\n```",
+    "choices": [
+        {
+            "choice": "will output 4",
+            "correct": "false"
+        },
+        {
+            "choice": "will return None",
+            "correct": "false"
+        },
+        {
+            "choice": "is erroneous",
+            "correct": "true"
+        },
+        {
+            "choice": "will output 2",
+            "correct": "false"
+        }
+    ]
+}

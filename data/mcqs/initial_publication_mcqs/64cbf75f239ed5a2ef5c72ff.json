@@ -1,0 +1,17 @@
+{
+    "question": "Fill in the blank: Given the following code snippet, what keyword should replace the blank to implement the ternary operator in Python, which is a shorter version of the if-else statement?\n```python\nx = 10\ny = 20\n\nprint(\"x is greater than y\" ______ x > y ______ \"y is greater than x\")\n```",
+    "choices": [
+        {
+            "choice": "if, then",
+            "correct": "false"
+        },
+        {
+            "choice": "if, else",
+            "correct": "true"
+        },
+        {
+            "choice": "if, elif",
+            "correct": "false"
+        }
+    ]
+}

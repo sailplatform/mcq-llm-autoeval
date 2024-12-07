@@ -1,0 +1,17 @@
+{
+    "question": "Consider the code snippet below:\n```python\nimport pandas as pd\nimport numpy as np\nnp.random.seed(0)\ndf = pd.DataFrame(np.random.choice(10, (5, 4)), columns=['A', 'B', 'C', 'D'])\ndf_analysis = df.describe()\nprint(df_analysis.loc[['min', 'max', 'std'], ['A', 'C']])\n```\nWhat will this program output?",
+    "choices": [
+        {
+            "choice": "\n  A         C\nmin  0.000000  1.000000\nmax  9.000000  8.000000\nstd  3.095696  2.872281",
+            "correct": "true"
+        },
+        {
+            "choice": "\n  A         C\nmin  0.000000  0.000000\nmax  9.000000  5.000000\nstd  3.000000  3.000000",
+            "correct": "false"
+        },
+        {
+            "choice": "\n  A         C\nmin  1.000000  2.000000\nmax  8.000000  9.000000\nstd  2.872281  3.095696",
+            "correct": "false"
+        }
+    ]
+}

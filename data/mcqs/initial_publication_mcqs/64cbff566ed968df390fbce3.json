@@ -1,0 +1,21 @@
+{
+    "question": "UTF-8 is:",
+    "choices": [
+        {
+            "choice": "the 9th version of the UTF-standard",
+            "correct": "false"
+        },
+        {
+            "choice": "a form of encoding Unicode code points",
+            "correct": "true"
+        },
+        {
+            "choice": "a synonym for byte",
+            "correct": "false"
+        },
+        {
+            "choice": "a Python version name",
+            "correct": "false"
+        }
+    ]
+}

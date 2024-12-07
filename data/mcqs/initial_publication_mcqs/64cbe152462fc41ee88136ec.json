@@ -1,0 +1,17 @@
+{
+    "question": "Fill in the blank: Given the following code snippet, what operator should replace the blank to assign the result of '5 + 3' to the variable 'result' in Python?\n\\n```python\nresult ______ 5 + 3\n```",
+    "choices": [
+        {
+            "choice": ";",
+            "correct": "false"
+        },
+        {
+            "choice": "=",
+            "correct": "true"
+        },
+        {
+            "choice": ":",
+            "correct": "false"
+        }
+    ]
+}

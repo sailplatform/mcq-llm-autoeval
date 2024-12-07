@@ -1,0 +1,5 @@
+model: claude-3-opus-20240229
+
+temperature: 0
+completion_len: 2000
+top_p: 1

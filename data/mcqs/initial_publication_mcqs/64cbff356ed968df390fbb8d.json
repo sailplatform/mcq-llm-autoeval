@@ -1,0 +1,17 @@
+{
+    "question": "What is a source code?",
+    "choices": [
+        {
+            "choice": "Machine code executed by computers",
+            "correct": "false"
+        },
+        {
+            "choice": "Another name for a source file",
+            "correct": "false"
+        },
+        {
+            "choice": "A program written in a high-level programming language",
+            "correct": "true"
+        }
+    ]
+}

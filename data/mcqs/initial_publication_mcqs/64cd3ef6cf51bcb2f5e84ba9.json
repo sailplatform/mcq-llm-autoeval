@@ -1,0 +1,17 @@
+{
+    "question": "Consider the following code:\n```python\nimport pandas as pd\n\n# Creating a DataFrame\n\ndata = {'Population': [125, 210, 138, 59, 163],\n        'Area': [33.1, 20.1, 46.6, 42.7, 28.3],\n        'Density': [3.77, 10.45, 2.96, 1.38, 5.76]}\n\ncity_df = pd.DataFrame(data, index = ['City1', 'City2', 'City3', 'City4', 'City5'])\n\n# Description of DataFrame\ndescription = city_df.describe()\n```\n Which command can be used to determine the median population and what would be the output be?",
+    "choices": [
+        {
+            "choice": "`description.loc['50%']['Population']` should be executed, and the output will be 138.",
+            "correct": "true"
+        },
+        {
+            "choice": "`description.median()` should be executed, and the output will be a series with median values of 'Population', 'Area' and 'Density'.",
+            "correct": "false"
+        },
+        {
+            "choice": "`city_df['Population'].median()` should be executed, and the output will be 138.",
+            "correct": "false"
+        }
+    ]
+}
